@@ -1,0 +1,766 @@
+{
+    "devMode": false,
+    "ignoreCodeBlockRestrictions": false,
+    "preferredDateFormat": "YYYY-MM-DD",
+    "firstWeekday": {
+        "index": 1,
+        "name": "Monday",
+        "shortName": "Mo"
+    },
+    "syncInterval": 100,
+    "enableJs": true,
+    "viewFieldDisplayNullAsEmpty": false,
+    "enableSyntaxHighlighting": true,
+    "enableEditorRightClickMenu": true,
+    "inputFieldTemplates": [],
+    "buttonTemplates": [
+        {
+            "style": "destructive",
+            "label": "Reset",
+            "id": "basic-reset",
+            "action": {
+                "type": "js",
+                "file": "_scripts/task-reset.js",
+                "args": {
+                    "type": "basic",
+                    "ignore": "#lock"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "Clear Timers",
+            "id": "clear-timers",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "resetAll"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "play",
+            "id": "refresh-start",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/refresh.js",
+                "args": {
+                    "action": "start"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "pause",
+            "id": "refresh-stop",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/refresh.js",
+                "args": {
+                    "action": "stop"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "refresh-cw",
+            "id": "refresh-icon",
+            "action": {
+                "type": "js",
+                "file": "_scripts/refresh.js"
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "check",
+            "id": "svet-complete",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "complete",
+                    "event": "svet"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "eraser",
+            "id": "svet-reset",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "reset",
+                    "event": "svet"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "plus",
+            "id": "svet-plus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "svet",
+                    "value": 0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "minus",
+            "id": "svet-minus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "svet",
+                    "value": -0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "check",
+            "id": "evet-complete",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "complete",
+                    "event": "evet"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "eraser",
+            "id": "evet-reset",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "reset",
+                    "event": "evet"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "plus",
+            "id": "evet-plus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "evet",
+                    "value": 0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "minus",
+            "id": "evet-minus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "evet",
+                    "value": -0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "check",
+            "id": "nvet-complete",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "complete",
+                    "event": "nvet"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "eraser",
+            "id": "nvet-reset",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "reset",
+                    "event": "nvet"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "plus",
+            "id": "nvet-plus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "nvet",
+                    "value": 0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "minus",
+            "id": "nvet-minus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "nvet",
+                    "value": -0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "check",
+            "id": "wvet-complete",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "complete",
+                    "event": "wvet"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "eraser",
+            "id": "wvet-reset",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "reset",
+                    "event": "wvet"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "plus",
+            "id": "wvet-plus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "wvet",
+                    "value": 0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "minus",
+            "id": "wvet-minus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "wvet",
+                    "value": -0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "check",
+            "id": "saps-complete",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "complete",
+                    "event": "saps"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "eraser",
+            "id": "saps-reset",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "reset",
+                    "event": "saps"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "plus",
+            "id": "saps-plus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "saps",
+                    "value": 0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "minus",
+            "id": "saps-minus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "saps",
+                    "value": -0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "check",
+            "id": "balth-complete",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "complete",
+                    "event": "balth"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "eraser",
+            "id": "balth-reset",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "reset",
+                    "event": "balth"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "plus",
+            "id": "balth-plus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "balth",
+                    "value": 0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "minus",
+            "id": "balth-minus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "balth",
+                    "value": -0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "check",
+            "id": "wyvern-complete",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "complete",
+                    "event": "wyvern"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "eraser",
+            "id": "wyvern-reset",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "reset",
+                    "event": "wyvern"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "plus",
+            "id": "wyvern-plus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "wyvern",
+                    "value": 0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "minus",
+            "id": "wyvern-minus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "wyvern",
+                    "value": -0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "check",
+            "id": "guzz-complete",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "complete",
+                    "event": "guzz"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "eraser",
+            "id": "guzz-reset",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "reset",
+                    "event": "guzz"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "plus",
+            "id": "guzz-plus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "guzz",
+                    "value": 0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "minus",
+            "id": "guzz-minus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "guzz",
+                    "value": -0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "check",
+            "id": "bramble-complete",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "complete",
+                    "event": "bramble"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "eraser",
+            "id": "bramble-reset",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "reset",
+                    "event": "bramble"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "plus",
+            "id": "bramble-plus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "bramble",
+                    "value": 0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "minus",
+            "id": "bramble-minus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "bramble",
+                    "value": -0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "check",
+            "id": "ooze-complete",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "complete",
+                    "event": "ooze"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "eraser",
+            "id": "ooze-reset",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "reset",
+                    "event": "ooze"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "plus",
+            "id": "ooze-plus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "ooze",
+                    "value": 0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "minus",
+            "id": "ooze-minus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "ooze",
+                    "value": -0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "check",
+            "id": "tm-complete",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "complete",
+                    "event": "tm"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "eraser",
+            "id": "tm-reset",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "reset",
+                    "event": "tm"
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "plus",
+            "id": "tm-plus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "tm",
+                    "value": 0.5
+                }
+            }
+        },
+        {
+            "style": "primary",
+            "label": "",
+            "icon": "minus",
+            "id": "tm-minus",
+            "class": "bobl-button",
+            "action": {
+                "type": "js",
+                "file": "_scripts/bobl.js",
+                "args": {
+                    "action": "adjust",
+                    "event": "tm",
+                    "value": -0.5
+                }
+            }
+        }
+    ],
+    "excludedFolders": ["templates"],
+    "minSyncInterval": 50,
+    "maxSyncInterval": 1000
+}

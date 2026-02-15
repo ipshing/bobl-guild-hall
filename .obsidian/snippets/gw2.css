@@ -1,0 +1,33 @@
+/***************************/
+/*       Guild Hall        */
+/***************************/
+.guild-upgrade .details {
+    --dl-padding: 6em;
+}
+.guild-upgrade .details dt {
+    padding: 2px 0;
+}
+.guild-upgrade .details dd.requirements div:first-child {
+    display: inline;
+}
+.guild-upgrade .details .requirements.no-requirements {
+    font-style: oblique;
+}
+.guild-upgrade .materials {
+    --dl-padding: 3em;
+}
+.guild-upgrade .materials .copy-code-button {
+    position: relative;
+}
+.guild-upgrade dl.materials-list {
+    /* add extra padding for the definition list view */
+    padding-top: var(--size-4-2);
+}
+.guild-upgrade .materials dt {
+    text-align: right;
+    padding: 4px var(--size-4-2);
+    border-right: 1px solid black;
+}
+.guild-upgrade .materials dd {
+    padding-left: var(--size-4-2);
+}

@@ -1,0 +1,11 @@
+/* adjust spacing around meta bind buttons */
+.markdown-rendered .mb-button-block {
+    margin-block-start: var(--p-spacing);
+    margin-block-end: var(--p-spacing);
+}
+
+.confirmation-modal .action-buttons {
+    display: flex;
+    justify-content: end;
+    gap: var(--size-4-3);
+}

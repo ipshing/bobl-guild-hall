@@ -1,0 +1,24 @@
+{
+  "pluginList": [
+    "ipshing/obsidian-rpg-toolkit",
+    "ipshing/obsidian-markdown-extended"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "ipshing/obsidian-rpg-toolkit",
+      "version": ""
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "personalAccessToken": "",
+  "selectLatestPluginVersionByDefault": false,
+  "allowIncompatiblePlugins": false
+}

@@ -1,0 +1,276 @@
+{
+  "main": {
+    "id": "306427133310fd4c",
+    "type": "split",
+    "children": [
+      {
+        "id": "a31db3bf9025ad9e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4bf5e546f669cf4",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Upgrade Plan.md",
+                "mode": "preview",
+                "source": true
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Upgrade Plan"
+            }
+          },
+          {
+            "id": "6cbe4c2320e3a676",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Guild Hall Upgrades.md",
+                "mode": "preview",
+                "source": true
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Guild Hall Upgrades"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8ffd94cdee4bac9c",
+    "type": "split",
+    "children": [
+      {
+        "id": "0e14c426ab87c799",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "939a12f3580510d8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "963a47993d9cc29d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9abc7eafb6e7cfb8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Daily Tasks.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Daily Tasks"
+            }
+          },
+          {
+            "id": "414ce772ce35f6c9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0e12ffc41a59b154",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 268.5
+  },
+  "right": {
+    "id": "62d8c16c48ffb1d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d3c8d9451f6086d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb1649432cf0804f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Daily Tasks.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Daily Tasks"
+            }
+          },
+          {
+            "id": "eadc666c7d245c19",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Armor Hints.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Armor Hints"
+            }
+          },
+          {
+            "id": "d906cdfac2073f9c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "62aa986e01627cf6",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Untitled.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Untitled"
+            }
+          },
+          {
+            "id": "889864df9c111da9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 367.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian42-brat:BRAT": false,
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "publish:Publish changes...": false
+    }
+  },
+  "active": "e4bf5e546f669cf4",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "README.md",
+    "Upgrade Plan.md",
+    "Guild Hall Upgrades.md",
+    "Upgrades/Scribing- Guild Heroes Banner.md",
+    "Upgrades/Plant Synthesizers 3.md",
+    "Upgrades/Arena Restoration 2.md",
+    "Upgrades/Ore Synthesizer 6.md",
+    "Upgrades/Guild Hall Swiftness +11%.md",
+    "Upgrades/Guild Enhancement- PvP Reward Boost.md",
+    "Upgrades/Mining Rate 6.md",
+    "Upgrades/Guild Enhancement- World Reward Tracks.md",
+    "Upgrades/Guild Enhancement- Experience.md",
+    "Upgrades/Mining Rate 5.md",
+    "Upgrades/Mining Rate 4.md",
+    "Upgrades/Mining Rate 3.md",
+    "Upgrades/Mining Rate 2.md",
+    "Upgrades/Mining Rate 1.md",
+    "Assets/Currencies/favor-gold.png",
+    "Upgrades/Guild Hall.md",
+    "Upgrades/Guild Initiative Registration.md",
+    "Upgrades/Guild Waypoint 15% Discount.md",
+    "Upgrades/Further Exploration.md",
+    "Upgrades/Guild Enhancement- Map Bonus.md",
+    "Buildings/Guild Tavern.md",
+    "Upgrades/Guild Vault- Stash.md",
+    "Upgrades/Guild Enhancement- Karma.md",
+    "_scripts/reset.js",
+    "Assets/Food/chocolate-omnomberry-cream.png",
+    "Assets/Food/bowl-of-lotus-stirfry.png",
+    "Assets/Items/trading-post-express.png",
+    "Assets/Materials/zucchini.png",
+    "Assets/Materials/topaz-nugget.png",
+    "Assets/Materials/topaz-lump.png",
+    "Assets/Materials/thyme-leaf.png",
+    "Assets/Materials/sunstone-nugget.png",
+    "Assets/Materials/sunstone-lump.png",
+    "Assets/Currencies",
+    "Assets/Upgrades",
+    "Assets/Novelties",
+    "Assets/Gifts",
+    "Assets/Items",
+    "Assets/Consumables",
+    "Assets/Food",
+    "Assets/Blueprints",
+    "Assets/Materials"
+  ]
+}

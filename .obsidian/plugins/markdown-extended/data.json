@@ -1,0 +1,12 @@
+{
+  "version": "0.12.3",
+  "previousVersion": "0.12.0",
+  "renderEmbedProperties": true,
+  "renderImageProperties": true,
+  "renderDLists": true,
+  "renderInlineDLists": true,
+  "renderInlineQuotes": true,
+  "renderSubscript": true,
+  "renderSuperscript": true,
+  "inlineShowCopyButton": true
+}

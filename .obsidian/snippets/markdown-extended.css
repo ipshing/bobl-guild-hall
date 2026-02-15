@@ -1,0 +1,738 @@
+/***************************/
+/*    Definition Lists     */
+/***************************/
+dl {
+    margin-block-start: 0.888888em;
+    margin-block-end: 0.888888em;
+    margin-inline-start: var(--dl-padding);
+}
+dt,
+dd {
+    /* override justify behavior */
+    text-align: left;
+}
+dt:has(+ dd) {
+    display: inline-block;
+}
+dt {
+    margin-inline-start: calc(-1 * var(--dl-padding));
+    padding-inline-end: 0.33333333em;
+    min-width: var(--dl-padding);
+    font-weight: var(--bold-weight);
+}
+dd {
+    display: inline;
+    margin-inline-start: 0;
+}
+dd + dd {
+    /* Ensures a new line after between each group */
+    display: block;
+}
+dd:not(:last-child)::after {
+    /* Ensures a new line after between each group */
+    content: "";
+    display: block;
+}
+
+.dl-padding-1 {
+    --dl-padding: 1em;
+}
+
+.dl-padding-1-5 {
+    --dl-padding: 1.5em;
+}
+
+.dl-padding-2 {
+    --dl-padding: 2em;
+}
+
+.dl-padding-2-5 {
+    --dl-padding: 2.5em;
+}
+
+.dl-padding-3 {
+    --dl-padding: 3em;
+}
+
+.dl-padding-3-5 {
+    --dl-padding: 3.5em;
+}
+
+.dl-padding-4 {
+    --dl-padding: 4em;
+}
+
+.dl-padding-4-5 {
+    --dl-padding: 4.5em;
+}
+
+.dl-padding-5 {
+    --dl-padding: 5em;
+}
+
+.dl-padding-5-5 {
+    --dl-padding: 5.5em;
+}
+
+.dl-padding-6 {
+    --dl-padding: 6em;
+}
+
+.dl-padding-6-5 {
+    --dl-padding: 6.5em;
+}
+
+.dl-padding-7 {
+    --dl-padding: 7em;
+}
+
+.dl-padding-7-5 {
+    --dl-padding: 7.5em;
+}
+
+.dl-padding-8 {
+    --dl-padding: 8em;
+}
+
+.dl-padding-8-5 {
+    --dl-padding: 8.5em;
+}
+
+.dl-padding-9 {
+    --dl-padding: 9em;
+}
+
+.dl-padding-9-5 {
+    --dl-padding: 9.5em;
+}
+
+.dl-padding-10 {
+    --dl-padding: 10em;
+}
+
+.dl-padding-10-5 {
+    --dl-padding: 10.5em;
+}
+
+/***************************/
+/*         Tables          */
+/***************************/
+/* No margins by default */
+.markdown-rendered table {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+/* Except when two tables are together */
+.markdown-rendered div:has(> table, * table):has(+ div table) table {
+    margin-block-end: 0.75rem;
+}
+.markdown-rendered div:has(> table, * table) + div table {
+    margin-block-start: 0.75rem;
+}
+
+/* Fix margin for tables after headings */
+.markdown-rendered div:has(> :is(h1, h2, h3, h4, h5, h6)) + div table {
+    margin-block-start: 1.16666666em;
+}
+
+.markdown-rendered div:has(> table) {
+    /* Adds horizontal scrolling when necessary */
+    overflow-x: auto;
+}
+
+/* Override background color defaults */
+.markdown-rendered tbody tr {
+    background-color: var(--table-row-background);
+}
+
+/* Basic table settings (border, default layout, etc.) */
+table.gw2-table {
+    /* Override default table styles */
+    --table-header-background-hover: var(--table-header-background);
+    --table-row-background: var(--table-background);
+    --table-row-alt-background-hover: var(--table-row-background-hover);
+    --table-vertical-align: middle;
+    --table-border-radius: 6px;
+
+    font-weight: var(--font-normal);
+    border-collapse: separate;
+    border-radius: var(--table-border-radius);
+    border-spacing: 0;
+    width: 100%;
+}
+.theme-light table.gw2-table {
+    --table-background: var(--color-base-10);
+    --table-border-color: var(--color-base-35);
+    --table-header-border-color: rgba(74, 0, 204, 0.6);
+    --table-header-background: rgba(158, 103, 255, 0.3);
+    --table-row-alt-background: rgba(158, 103, 255, 0.1);
+    --table-row-background-hover: rgba(158, 103, 255, 0.2);
+}
+.theme-dark table.gw2-table {
+    --table-background: var(--color-base-20);
+    --table-border-color: var(--color-base-35);
+    --table-header-border-color: rgba(71, 18, 162, 0.8);
+    --table-header-background: rgba(158, 103, 255, 0.5);
+    --table-row-alt-background: rgba(158, 103, 255, 0.2);
+    --table-row-background-hover: rgba(158, 103, 255, 0.35);
+}
+
+/* Caption */
+.gw2-table caption {
+    font-size: 1.05555555em;
+    font-weight: var(--bold-weight);
+    letter-spacing: 0.015em;
+    text-align: left;
+    margin-block-end: 3px;
+}
+
+/* Footer */
+.gw2-table tfoot :is(td, th, td:first-child) {
+    /* Remove border by default */
+    border: 0;
+}
+
+/* Row/Cell settings */
+.gw2-table th,
+.gw2-table td {
+    vertical-align: var(--table-vertical-align);
+}
+.gw2-table th {
+    padding: 15px 15px;
+}
+.gw2-table td {
+    padding: 10px 15px;
+}
+.gw2-table tbody [colspan] {
+    padding-left: 8px;
+}
+
+.gw2-table.no-header thead {
+    display: none;
+}
+
+/* Hover transition */
+.gw2-table tbody tr {
+    transition: 0.3s;
+}
+/* Border Settings */
+.gw2-table th,
+.gw2-table td {
+    border: 0;
+}
+/* "outer" header border */
+.gw2-table thead > tr:first-child :is(th, td) {
+    border-top: 1px solid var(--table-header-background);
+}
+.gw2-table thead :is(th:last-child, td:last-child) {
+    border-right: 1px solid var(--table-header-background);
+}
+.gw2-table.no-footer tbody tr:last-child :is(th, td) {
+    border-bottom: 1px solid var(--table-border-color);
+}
+.gw2-table thead :is(th:first-child, td:first-child) {
+    border-left: 1px solid var(--table-header-background);
+}
+/* "outer" body border */
+.gw2-table.no-header tbody > tr:first-child :is(th, td) {
+    border-top: 1px solid var(--table-border-color);
+}
+.gw2-table tbody :is(th:last-child, td:last-child) {
+    border-right: 1px solid var(--table-border-color);
+}
+.gw2-table.no-footer tbody tr:last-child :is(th, td) {
+    border-bottom: 1px solid var(--table-border-color);
+}
+.gw2-table tbody :is(th:first-child, td:first-child) {
+    border-left: 1px solid var(--table-border-color);
+}
+/* inner header border */
+.gw2-table thead th:not(:last-child) {
+    border-right: 1px solid var(--table-header-border-color);
+}
+.gw2-table thead tr:last-child th {
+    border-bottom: 3px solid var(--table-header-border-color);
+}
+/* inner body border */
+.gw2-table tbody td:not(:last-child) {
+    border-right: 1px solid var(--table-border-color);
+}
+.gw2-table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid var(--table-border-color);
+}
+/* corner radius */
+.gw2-table thead tr:first-child th:first-child,
+.gw2-table.no-header tbody tr:first-child :is(th, td):first-child {
+    border-radius: var(--table-border-radius) 0 0 0;
+}
+.gw2-table thead tr:first-child th:last-child,
+.gw2-table.no-header tbody tr:first-child :is(th, td):last-child {
+    border-radius: 0 var(--table-border-radius) 0 0;
+}
+.gw2-table thead tr:first-child th:only-child,
+.gw2-table.no-header tbody tr:first-child :is(th, td):only-child {
+    border-radius: var(--table-border-radius) var(--table-border-radius) 0 0;
+}
+.gw2-table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 var(--table-border-radius);
+}
+.gw2-table tbody tr:last-child td:last-child {
+    border-radius: 0 0 var(--table-border-radius) 0;
+}
+.gw2-table tbody tr:last-child td:only-child {
+    border-radius: 0 0 var(--table-border-radius) var(--table-border-radius);
+}
+
+/* code block background color */
+.gw2-table tr code {
+    --code-background: var(--color-base-25);
+}
+
+/* Vertical Alignment */
+.gw2-table.valign-top {
+    --table-vertical-align: top;
+}
+.gw2-table.valign-middle {
+    --table-vertical-align: middle;
+}
+.gw2-table.valign-bottom {
+    --table-vertical-align: bottom;
+}
+
+/* Column Widths */
+.gw2-table {
+    /* Set defaults for columns */
+    --col-1-width: auto;
+    --col-2-width: auto;
+    --col-3-width: auto;
+    --col-4-width: auto;
+    --col-5-width: auto;
+    --col-6-width: auto;
+    --col-7-width: auto;
+    --col-8-width: auto;
+    --col-9-width: auto;
+    --col-10-width: auto;
+    --col-1-wrap: normal;
+    --col-2-wrap: normal;
+    --col-3-wrap: normal;
+    --col-4-wrap: normal;
+    --col-5-wrap: normal;
+    --col-6-wrap: normal;
+    --col-7-wrap: normal;
+    --col-8-wrap: normal;
+    --col-9-wrap: normal;
+    --col-10-wrap: normal;
+}
+/* Apply column formatting */
+.gw2-table th:nth-child(1),
+.gw2-table td:nth-child(1) {
+    width: var(--col-1-width);
+    white-space: var(--col-1-wrap);
+}
+.gw2-table th:nth-child(2),
+.gw2-table td:nth-child(2) {
+    width: var(--col-2-width);
+    white-space: var(--col-2-wrap);
+}
+.gw2-table th:nth-child(3),
+.gw2-table td:nth-child(3) {
+    width: var(--col-3-width);
+    white-space: var(--col-3-wrap);
+}
+.gw2-table th:nth-child(4),
+.gw2-table td:nth-child(4) {
+    width: var(--col-4-width);
+    white-space: var(--col-4-wrap);
+}
+.gw2-table th:nth-child(5),
+.gw2-table td:nth-child(5) {
+    width: var(--col-5-width);
+    white-space: var(--col-5-wrap);
+}
+.gw2-table th:nth-child(6),
+.gw2-table td:nth-child(6) {
+    width: var(--col-6-width);
+    white-space: var(--col-6-wrap);
+}
+.gw2-table th:nth-child(7),
+.gw2-table td:nth-child(7) {
+    width: var(--col-7-width);
+    white-space: var(--col-7-wrap);
+}
+.gw2-table th:nth-child(8),
+.gw2-table td:nth-child(8) {
+    width: var(--col-8-width);
+    white-space: var(--col-8-wrap);
+}
+.gw2-table th:nth-child(9),
+.gw2-table td:nth-child(9) {
+    width: var(--col-9-width);
+    white-space: var(--col-9-wrap);
+}
+.gw2-table th:nth-child(10),
+.gw2-table td:nth-child(10) {
+    width: var(--col-10-width);
+    white-space: var(--col-10-wrap);
+}
+
+/* Modify based on classes */
+.col-1-width-1 {
+    --col-1-width: 1% !important;
+}
+.col-1-width-10 {
+    --col-1-width: 10% !important;
+}
+.col-1-width-12 {
+    --col-1-width: 12.5% !important;
+}
+.col-1-width-15 {
+    --col-1-width: 15% !important;
+}
+.col-1-width-20 {
+    --col-1-width: 20% !important;
+}
+.col-1-width-25 {
+    --col-1-width: 25% !important;
+}
+.col-1-width-30 {
+    --col-1-width: 30% !important;
+}
+.col-1-width-33 {
+    --col-1-width: 33% !important;
+}
+.col-1-width-40 {
+    --col-1-width: 40% !important;
+}
+.col-1-width-45 {
+    --col-1-width: 45% !important;
+}
+.col-1-width-50 {
+    --col-1-width: 50% !important;
+}
+.col-2-width-1 {
+    --col-2-width: 1% !important;
+}
+.col-2-width-10 {
+    --col-2-width: 10% !important;
+}
+.col-2-width-12 {
+    --col-2-width: 12.5% !important;
+}
+.col-2-width-15 {
+    --col-2-width: 15% !important;
+}
+.col-2-width-20 {
+    --col-2-width: 20% !important;
+}
+.col-2-width-25 {
+    --col-2-width: 25% !important;
+}
+.col-2-width-33 {
+    --col-2-width: 33% !important;
+}
+.col-2-width-30 {
+    --col-2-width: 30% !important;
+}
+.col-2-width-40 {
+    --col-2-width: 40% !important;
+}
+.col-2-width-45 {
+    --col-2-width: 45% !important;
+}
+.col-2-width-50 {
+    --col-2-width: 50% !important;
+}
+.col-3-width-1 {
+    --col-3-width: 1% !important;
+}
+.col-3-width-12 {
+    --col-3-width: 12.5% !important;
+}
+.col-3-width-10 {
+    --col-3-width: 10% !important;
+}
+.col-3-width-15 {
+    --col-3-width: 15% !important;
+}
+.col-3-width-20 {
+    --col-3-width: 20% !important;
+}
+.col-3-width-25 {
+    --col-3-width: 25% !important;
+}
+.col-3-width-33 {
+    --col-3-width: 33% !important;
+}
+.col-3-width-30 {
+    --col-3-width: 30% !important;
+}
+.col-3-width-40 {
+    --col-3-width: 40% !important;
+}
+.col-3-width-45 {
+    --col-3-width: 45% !important;
+}
+.col-3-width-50 {
+    --col-3-width: 50% !important;
+}
+.col-4-width-1 {
+    --col-4-width: 1% !important;
+}
+.col-4-width-10 {
+    --col-4-width: 10% !important;
+}
+.col-4-width-12 {
+    --col-4-width: 12.5% !important;
+}
+.col-4-width-15 {
+    --col-4-width: 15% !important;
+}
+.col-4-width-20 {
+    --col-4-width: 20% !important;
+}
+.col-4-width-25 {
+    --col-4-width: 25% !important;
+}
+.col-4-width-33 {
+    --col-4-width: 33% !important;
+}
+.col-4-width-30 {
+    --col-4-width: 30% !important;
+}
+.col-4-width-40 {
+    --col-4-width: 40% !important;
+}
+.col-4-width-45 {
+    --col-4-width: 45% !important;
+}
+.col-4-width-50 {
+    --col-4-width: 50% !important;
+}
+.col-5-width-1 {
+    --col-5-width: 1% !important;
+}
+.col-5-width-10 {
+    --col-5-width: 10% !important;
+}
+.col-5-width-12 {
+    --col-5-width: 12.5% !important;
+}
+.col-5-width-15 {
+    --col-5-width: 15% !important;
+}
+.col-5-width-20 {
+    --col-5-width: 20% !important;
+}
+.col-5-width-25 {
+    --col-5-width: 25% !important;
+}
+.col-5-width-33 {
+    --col-5-width: 33% !important;
+}
+.col-5-width-30 {
+    --col-5-width: 30% !important;
+}
+.col-5-width-40 {
+    --col-5-width: 40% !important;
+}
+.col-5-width-45 {
+    --col-5-width: 45% !important;
+}
+.col-5-width-50 {
+    --col-5-width: 50% !important;
+}
+.col-6-width-1 {
+    --col-6-width: 1% !important;
+}
+.col-6-width-10 {
+    --col-6-width: 10% !important;
+}
+.col-6-width-12 {
+    --col-6-width: 12.5% !important;
+}
+.col-6-width-15 {
+    --col-6-width: 15% !important;
+}
+.col-6-width-20 {
+    --col-6-width: 20% !important;
+}
+.col-6-width-25 {
+    --col-6-width: 25% !important;
+}
+.col-6-width-33 {
+    --col-6-width: 33% !important;
+}
+.col-6-width-30 {
+    --col-6-width: 30% !important;
+}
+.col-6-width-40 {
+    --col-6-width: 40% !important;
+}
+.col-6-width-45 {
+    --col-6-width: 45% !important;
+}
+.col-6-width-50 {
+    --col-6-width: 50% !important;
+}
+.col-7-width-1 {
+    --col-7-width: 1% !important;
+}
+.col-7-width-10 {
+    --col-7-width: 10% !important;
+}
+.col-7-width-12 {
+    --col-7-width: 12.5% !important;
+}
+.col-7-width-15 {
+    --col-7-width: 15% !important;
+}
+.col-7-width-20 {
+    --col-7-width: 20% !important;
+}
+.col-7-width-25 {
+    --col-7-width: 25% !important;
+}
+.col-7-width-33 {
+    --col-7-width: 33% !important;
+}
+.col-7-width-30 {
+    --col-7-width: 30% !important;
+}
+.col-7-width-40 {
+    --col-7-width: 40% !important;
+}
+.col-7-width-45 {
+    --col-7-width: 45% !important;
+}
+.col-7-width-50 {
+    --col-7-width: 50% !important;
+}
+.col-8-width-1 {
+    --col-8-width: 1% !important;
+}
+.col-8-width-10 {
+    --col-8-width: 10% !important;
+}
+.col-8-width-12 {
+    --col-8-width: 12.5% !important;
+}
+.col-8-width-15 {
+    --col-8-width: 15% !important;
+}
+.col-8-width-20 {
+    --col-8-width: 20% !important;
+}
+.col-8-width-25 {
+    --col-8-width: 25% !important;
+}
+.col-8-width-33 {
+    --col-8-width: 33% !important;
+}
+.col-8-width-30 {
+    --col-8-width: 30% !important;
+}
+.col-8-width-40 {
+    --col-8-width: 40% !important;
+}
+.col-8-width-45 {
+    --col-8-width: 45% !important;
+}
+.col-8-width-50 {
+    --col-8-width: 50% !important;
+}
+.col-9-width-1 {
+    --col-9-width: 1% !important;
+}
+.col-9-width-10 {
+    --col-9-width: 10% !important;
+}
+.col-9-width-12 {
+    --col-9-width: 12.5% !important;
+}
+.col-9-width-15 {
+    --col-9-width: 15% !important;
+}
+.col-9-width-20 {
+    --col-9-width: 20% !important;
+}
+.col-9-width-25 {
+    --col-9-width: 25% !important;
+}
+.col-9-width-33 {
+    --col-9-width: 33% !important;
+}
+.col-9-width-30 {
+    --col-9-width: 30% !important;
+}
+.col-9-width-40 {
+    --col-9-width: 40% !important;
+}
+.col-9-width-45 {
+    --col-9-width: 45% !important;
+}
+.col-9-width-50 {
+    --col-9-width: 50% !important;
+}
+.col-10-width-1 {
+    --col-10-width: 1% !important;
+}
+.col-10-width-10 {
+    --col-10-width: 10% !important;
+}
+.col-10-width-12 {
+    --col-10-width: 12.5% !important;
+}
+.col-10-width-15 {
+    --col-10-width: 15% !important;
+}
+.col-10-width-20 {
+    --col-10-width: 20% !important;
+}
+.col-10-width-25 {
+    --col-10-width: 25% !important;
+}
+.col-10-width-33 {
+    --col-10-width: 33% !important;
+}
+.col-10-width-30 {
+    --col-10-width: 30% !important;
+}
+.col-10-width-40 {
+    --col-10-width: 40% !important;
+}
+.col-10-width-45 {
+    --col-10-width: 45% !important;
+}
+.col-10-width-50 {
+    --col-10-width: 50% !important;
+}
+.col-1-nowrap {
+    --col-1-wrap: nowrap !important;
+}
+.col-2-nowrap {
+    --col-2-wrap: nowrap !important;
+}
+.col-3-nowrap {
+    --col-3-wrap: nowrap !important;
+}
+.col-4-nowrap {
+    --col-4-wrap: nowrap !important;
+}
+.col-5-nowrap {
+    --col-5-wrap: nowrap !important;
+}
+.col-6-nowrap {
+    --col-6-wrap: nowrap !important;
+}
+.col-7-nowrap {
+    --col-7-wrap: nowrap !important;
+}
+.col-8-nowrap {
+    --col-8-wrap: nowrap !important;
+}
+.col-9-nowrap {
+    --col-9-wrap: nowrap !important;
+}
+.col-10-nowrap {
+    --col-10-wrap: nowrap !important;
+}

@@ -1,0 +1,18 @@
+{
+  "accentColor": "",
+  "theme": "system",
+  "cssTheme": "",
+  "enabledCssSnippets": [
+    "roboto",
+    "homestead-table",
+    "links",
+    "meta-bind",
+    "fonts",
+    "theme-override",
+    "gw2",
+    "markdown-extended",
+    "plugins"
+  ],
+  "baseFontSize": 18,
+  "nativeMenus": false
+}
