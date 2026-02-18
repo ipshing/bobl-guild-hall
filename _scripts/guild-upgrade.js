@@ -117,22 +117,22 @@ if (page.materials.length > 0) {
         }, 1000);
     };
     /* If displaying as a definition list */
-    // const matList = materials.createEl("dl", "materials-list");
+    // const defList = materials.createEl("dl", "materials-list");
     // for (const material of page.materials) {
-    //     matList.createEl("dt", { text: material.count });
-    //     const matDetails = matList.createEl("dd");
+    //     defList.createEl("dt", { text: material.count });
+    //     const matDetails = defList.createEl("dd");
     //     // Get mat info using dataview
     //     const matPage = dv.page(material.link);
     //     matDetails.append(...markdownToHtml(`![[${matPage.image}|css: icon]] [${matPage.name}](${matPage.wikiLink})`));
     // }
     /* If displaying as a task list */
-    const matList = materials.createEl("ul", "contains-task-list has-list-bullet materials-list");
+    const taskList = materials.createEl("ul", "contains-task-list has-list-bullet materials-list");
     for (let i = 0; i < page.materials.length; i++) {
         const material = page.materials[i];
         // Get mat info
         const matPage = dv.page(material.link);
         // Create list item
-        const li = matList.createEl("li", { cls: "task-list-item", attr: { "data-task": "", dir: "auto" } });
+        const li = taskList.createEl("li", { cls: "task-list-item", attr: { "data-task": "", dir: "auto" } });
         li.createEl("span", "list-bullet");
         const chkbox = li.createEl("input", { cls: "task-list-item-checkbox", attr: { type: "checkbox" } });
         if (material.isComplete) {

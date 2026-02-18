@@ -14,10 +14,17 @@
     font-style: oblique;
 }
 .guild-upgrade .materials {
-    --dl-padding: 3em;
+    --dl-padding: 3.5em;
 }
 .guild-upgrade .materials .copy-code-button {
     position: relative;
+}
+.guild-upgrade p:has(+ dl.materials-list) {
+    margin-block-start: calc(0.6 * var(--p-spacing));
+    margin-block-end: 0;
+}
+.guild-upgrade p + dl.materials-list {
+    margin-block-start: 0;
 }
 .guild-upgrade dl.materials-list {
     /* add extra padding for the definition list view */
