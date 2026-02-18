@@ -15,7 +15,7 @@ cost:
   aetherium: 5000
   gold: 0
 isComplete: false
-order: 6
+order: 7
 materials:
   - link: "[[18 Slot Thick Leather Pack]]"
     count: 10

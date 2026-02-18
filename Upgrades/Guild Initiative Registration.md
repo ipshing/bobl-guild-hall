@@ -6,14 +6,15 @@ wikiLink: https://wiki.guildwars2.com/wiki/Guild_Initiative_Registration
 building: "[[Guild Iniative Headquarters]]"
 description: Access the Guild Initiative's central office in Lion's Arch.
 level: 0
-requires: []
+requires: 
+    - "[[Create Guild]]"
 xp: 0
 cost:
   favor: 0
   aetherium: 0
   gold: 0
 isComplete: false
-order: 0
+order: 1
 materials: []
 ---
 

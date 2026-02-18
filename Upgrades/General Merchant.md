@@ -14,7 +14,7 @@ cost:
   aetherium: 0
   gold: 30
 isComplete: false
-order: 2
+order: 3
 materials: []
 ---
 

@@ -17,16 +17,16 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 - The gold required as well as the cost/supply of materials is not taken into account due to the unpredictability of the availability of those resources.
 
 ### Week 1
-- [ ] Create Guild for 1![[coin-gold.png|css: icon]]
+- [ ] [[Create Guild]] for 1![[coin-gold.png|css: icon]]
 - [ ] [[Guild Initiative Registration]]
-- [ ] Complete 1 Guild Mission
+- [ ] Complete 1 [Guild Mission](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] Claim a [[Guild Hall]]
 - [ ] [[Tavern Restoration 1]]
 - [ ] [[General Merchant]]
 - [ ] [[Repair Anvil]]
 
 ### Week 2
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Mine Excavation 1]] (then wait 8h 20m)
 - [ ] [[Aetherium Capacity 1]] (then wait 25 hours)
 - [ ] [[Workshop Restoration 1]] (then wait 16h 40m)
@@ -34,7 +34,7 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 - [ ] [[Mission Slot- PvE|Mission Slot: PvE]]
 
 ### Week 3
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Guild Enhancement- Karma|Guild Enhancement: Karma]]
 - [ ] [[Guild Enhancement- Experience|Guild Enhancement: Experience]]
 - [ ] [[Mining Rate 1]] (then wait 6h 57m)
@@ -43,7 +43,7 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 - [ ] [[Aetherium Capacity 2]]
 
 ### Week 4
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Ore Synthesizer 1]]
 - [ ] [[Guild Enhancement- Critical Harvesting|Guild Enhancement: Critical Harvesting]]
 - [ ] [[Scribing- Guild Gathering Bonus Banner|Scribing: Guild Gathering Bonus Banner]]
@@ -55,7 +55,7 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 - [ ] [[Lumber Synthesizer 1]] (try to leave 1d 18h before end of week)
 
 ### Week 5
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Mining Rate 2]] (then wait 16h 40m)
 - [ ] [[Guild Enhancement- Critical Crafting|Guild Enhancement: Critical Crafting]] (then wait 11h 7m)
 - [ ] [[Guild Enhancement- Map Bonus|Guild Enhancement: Map Bonus]] (then wait 11h 7m)
@@ -64,7 +64,7 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 - [ ] ==[[Guild Enhancement- Magic Find]]== (try to leave 1d 9h 21m before end of week)
 
 ### Week 6
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Guild Waypoint 5% Discount]] (then wait 11h 7m)
 - [ ] [[Cloth Synthesizer 1]] (then wait 11h 7m)
 - [ ] [[Leather Synthesizer 1]] (then wait 1d 9h 21m)
@@ -73,13 +73,13 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 - [ ] [[Mission Slot- PvP|Mission Slot: PvP]] (try to leave 1d 9h 21m before end of week)
 
 ### Week 7
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Mine Excavation 2]] (then wait 1d 9h 21m)
 - [ ] [[Aetherium Capacity 3]] (then wait 2d 7h 35m)
 - [ ] [[Mining Rate 3]] (try to leave 1d 17h 40m before end of week)
 
 ### Week 8
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Leather Synthesizer 2]] (then wait 1d 17h 40m)
 - [ ] [[Cloth Synthesizer 2]] (then wait 1d 17h 40m)
 - [ ] [[Lumber Synthesizer 2]] (then wait 1d 1h)
@@ -87,7 +87,7 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 - [ ] [[Guild Hall Swiftness +11%]] (try to leave 1d 17h 40m before end of week)
 
 ### Week 9
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Tavern Restoration 2]] (then wait 25h)
 - [ ] [[Scribing- Guild Road Marker|Scribing: Guild Road Marker]] (then wait 25h)
 - [ ] [[Scribing- Guild Gold from Kills Banner|Scribing: Guild Gold from Kills Banner]] (then wait 25h)
@@ -97,7 +97,7 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 - [ ] [[WvW Guild Claiming- Camps|WvW Guild Claiming: Camps]]
 
 ### Week 10
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Scribing- Sabotage Depot|Scribing: Sabotage Depot]]
 - [ ] [[Scribing- Minor Supply Drop|Scribing: Minor Supply Drop]] (then wait 2h 5m)
 - [ ] [[Objective Aura 1- Supply Capacity|Objective Aura 1: Supply Capacity]] (then wait 8h 20m)
@@ -107,7 +107,7 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 - [ ] [[Mining Rate 4]]
 
 ### Week 11
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Scribing- Armored Dolyaks|Scribing: Armored Dolyaks]] (then wait 6h 57m)
 - [ ] [[Objective Aura 2- WvW Experience|Objective Aura 2: WvW Experience]] (then wait 1d 10h 45m)
 - [ ] [[Guild Hall Swiftness +22%]] (then wait 1d 10h 45m)
@@ -115,26 +115,26 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 - [ ] ==[[Guild Waypoint 10% Discount]]==
 
 ### Week 12
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Synthesis Output 1]] (then wait 1d 10h 45m)
 - [ ] [[Synthesis Output 2]] (then wait 1d 10h 45m)
 - [ ] [[Ore Synthesizer 3]] (then wait 1d 10h 45m)
 - [ ] [[Market Restoration 2]]
 
 ### Week 13
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Cloth Synthesizer 3]] (then wait 6h 57m)
 - [ ] [[Lumber Synthesizer 3]] (then wait 1d 10h 45m)
 - [ ] [[Leather Synthesizer 3]] (then wait 2d 21h 30m)
 - [ ] [[Aetherium Capacity 5]]
 
 ### Week 14
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Mine Excavation 3]]
 - [ ] [[Mining Rate 5]]
 
 ### Week 15
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Scribing- Guild Gold and Magic Find Banner|Scribing: Guild Gold and Magic Find Banner]] (then wait 1d 3h 50m)
 - [ ] [[Scribing- Guild Gathering and Swiftness Banner|Scribing: Guild Gathering and Swiftness Banner]] (then wait 1d 3h 50m)
 - [ ] [[War Room Restoration 2]] (then wait 11h 8m)
@@ -144,32 +144,32 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 - [ ] [[Lumber Synthesizer 4]]
 
 ### Week 16
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Cloth Synthesizer 4]] (then wait 1d 3h 50m)
 - [ ] [[Leather Synthesizer 4]] (then wait 1d 3h 50m)
 - [ ] [[Synthesis Output 3]] (then wait 1d 3h 50m)
 - [ ] [[Ore Synthesizer 5]]
 
 ### Week 17
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Aetherium Capacity 6]] (then wait 1d 3h 50m)
 - [ ] [[Ore Synthesizer 5]] (then wait 1d 3h 50m)
 - [ ] [[Lumber Synthesizer 5]] (then wait 1d 3h 50m)
 - [ ] [[Leather Synthesizer 5]]
 
 ### Week 18
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] [[Cloth Synthesizer 5]]
 - [ ] [[Plant Synthesizers 3]] (then wait 3d 19h 51m)
 - [ ] [[Mining Rate 6]]
 
 ### Week 19
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] ==[[Guild Waypoint 15% Discount]]== (then wait 4d 8h 10m)
 - [ ] [[Ore Synthesizer 6]]
 
 ### Week 20
-- [ ] Guild Missions
+- [ ] [Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)
 - [ ] (wait about 2d 21h 47)
 - [ ] ==[[Synthesis Output 4]]==
 

@@ -14,7 +14,7 @@ cost:
   aetherium: 3000
   gold: 0
 isComplete: false
-order: 5
+order: 6
 materials:
   - link: "[[Glob of Ectoplasm]]"
     count: 50
