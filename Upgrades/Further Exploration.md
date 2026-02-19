@@ -7,7 +7,7 @@ building: "[[Guild Iniative Headquarters]]"
 description: Open paths to the unexplored reaches of your guild hall.
 level: 40
 requires:
-  - "[[Guild Hall Upgrades]]"
+  - "[[Guild Hall]]"
   - "[[Tavern Restoration 1]]"
 xp: 100
 cost:

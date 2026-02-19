@@ -7,7 +7,7 @@ building: "[[Guild Iniative Headquarters]]"
 description: Add a portal device to the guild hall, allowing guild members to quickly travel as a group to missions and other destinations.
 level: 10
 requires:
-  - "[[Guild Hall Upgrades]]"
+  - "[[Guild Hall]]"
 xp: 100
 cost:
   favor: 500
