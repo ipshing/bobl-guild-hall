@@ -14,7 +14,7 @@
     font-style: oblique;
 }
 .guild-upgrade .materials {
-    --dl-padding: 3.5em;
+    --dl-padding: 3em;
 }
 .guild-upgrade .materials .copy-code-button {
     position: relative;

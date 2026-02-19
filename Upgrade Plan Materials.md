@@ -232,6 +232,8 @@ for (const phase of phases) {
     coin.append(...markdownToHtml(`**Gold:** ${gold}![[coin-gold.png|css: icon]]`));
     // List
     const defList = materials.createEl("dl", "materials-list");
+    // Add dl-padding class to override style sheet default
+    defList.addClass("dl-padding-3-5");
     for (const material of mats) {
         defList.createEl("dt", { text: material.count });
         const matDetails = defList.createEl("dd");
