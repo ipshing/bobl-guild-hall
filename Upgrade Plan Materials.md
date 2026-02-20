@@ -8,132 +8,128 @@ phases:
       - "[[Tavern Restoration 1]]"
       - "[[General Merchant]]"
       - "[[Repair Anvil]]"
-  - name: Week 2
-    upgrades: 
       - "[[Mine Excavation 1]]"
       - "[[Aetherium Capacity 1]]"
+  - name: Week 2
+    upgrades: 
       - "[[Workshop Restoration 1]]"
       - "[[Market Restoration 1]]"
       - "[[Mission Slot- PvE]]"
-  - name: Week 3
-    upgrades: 
+      - "[[Ore Synthesizer 1]]"
       - "[[Guild Enhancement- Karma]]"
       - "[[Guild Enhancement- Experience]]"
+  - name: Week 3
+    upgrades: 
       - "[[Mining Rate 1]]"
       - "[[War Room Restoration 1]]"
       - "[[Arena Restoration 1]]"
       - "[[Aetherium Capacity 2]]"
+      - "[[Guild Enhancement- Critical Crafting]]"
   - name: Week 4
     upgrades: 
-      - "[[Ore Synthesizer 1]]"
       - "[[Guild Enhancement- Critical Harvesting]]"
-      - "[[Scribing- Guild Gathering Bonus Banner]]"
-      - "[[Scribing- Guild Karma Banner]]"
-      - "[[Guild Hall Decorations Merchant 1]]"
-      - "[[Guild Trader 1]]"
       - "[[Guild Enhancement- World Reward Tracks]]"
       - "[[Guild Enhancement- PvP Reward Boost]]"
-      - "[[Lumber Synthesizer 1]]"
+      - "[[Arena Restoration 2]]"
+      - "[[Guild Portal]]"
+      - "[[Scribing- Guild Gathering Bonus Banner]]"
   - name: Week 5
     upgrades: 
       - "[[Mining Rate 2]]"
-      - "[[Guild Enhancement- Critical Crafting]]"
       - "[[Guild Enhancement- Map Bonus]]"
+      - "[[Scribing- Guild Karma Banner]]"
       - "[[Scribing- Guild Experience Banner]]"
       - "[[Scribing- Guild Magic Find Banner]]"
       - "[[Guild Enhancement- Magic Find]]"
   - name: Week 6
     upgrades: 
-      - "[[Guild Waypoint 5% Discount]]"
+      - "[[Mine Excavation 2]]"
+      - "[[Aetherium Capacity 3]]"
+      - "[[Mission Slot- WvW]]"
+      - "[[Mission Slot- PvP]]"
+      - "[[Guild Hall Swiftness +11%]]"
+  - name: Week 7
+    upgrades: 
+      - "[[Lumber Synthesizer 1]]"
+      - "[[Mining Rate 3]]"
       - "[[Cloth Synthesizer 1]]"
       - "[[Leather Synthesizer 1]]"
       - "[[Ore Synthesizer 2]]"
-      - "[[Mission Slot- WvW]]"
-      - "[[Mission Slot- PvP]]"
-  - name: Week 7
-    upgrades: 
-      - "[[Mine Excavation 2]]"
-      - "[[Aetherium Capacity 3]]"
-      - "[[Mining Rate 3]]"
   - name: Week 8
+    upgrades: 
+      - "[[Tavern Restoration 2]]"
+      - "[[Plant Synthesizers 1]]"
+      - "[[Aetherium Capacity 4]]"
+      - "[[Guild Hall Decorations Merchant 1]]"
+      - "[[Guild Trader 1]]"
+  - name: Week 9
+    upgrades: 
+      - "[[Market Restoration 2]]"
+      - "[[Workshop Restoration 2]]"
+      - "[[War Room Restoration 2]]"
+      - "[[Mining Rate 4]]"
+  - name: Week 10
     upgrades: 
       - "[[Leather Synthesizer 2]]"
       - "[[Cloth Synthesizer 2]]"
       - "[[Lumber Synthesizer 2]]"
-      - "[[Plant Synthesizers 1]]"
-      - "[[Guild Hall Swiftness +11%]]"
-  - name: Week 9
-    upgrades: 
-      - "[[Tavern Restoration 2]]"
+      - "[[Guild Waypoint 5% Discount]]"
       - "[[Scribing- Guild Road Marker]]"
       - "[[Scribing- Guild Gold from Kills Banner]]"
-      - "[[Guild Armorer 1]]"
-      - "[[Guild Weaponsmith 1]]"
-      - "[[Aetherium Capacity 4]]"
-  - name: Week 10
-    upgrades: 
-      - "[[Scribing- Sabotage Depot]]"
-      - "[[Scribing- Minor Supply Drop]]"
-      - "[[Objective Aura 1- Supply Capacity]]"
-      - "[[Scribing- Healing Mist]]"
-      - "[[Scribing- Guild Banquet]]"
-      - "[[Workshop Restoration 2]]"
-      - "[[Mining Rate 4]]"
+      - "[[WvW Guild Claiming- Camps]]"
   - name: Week 11
     upgrades: 
-      - "[[Scribing- Armored Dolyaks]]"
-      - "[[Objective Aura 2- WvW Experience]]"
-      - "[[Guild Hall Swiftness +22%]]"
-      - "[[Scribing- Guild Karma and Experience Banner]]"
       - "[[Guild Waypoint 10% Discount]]"
+      - "[[Scribing- Guild Banquet]]"
+      - "[[Scribing- Guild Karma and Experience Banner]]"
+      - "[[Synthesis Output 1]]"
+      - "[[Scribing- Sabotage Depot]]"
+      - "[[Scribing- Minor Supply Drop]]"
   - name: Week 12
     upgrades: 
-      - "[[Synthesis Output 1]]"
       - "[[Synthesis Output 2]]"
       - "[[Ore Synthesizer 3]]"
-      - "[[Market Restoration 2]]"
+      - "[[Aetherium Capacity 5]]"
+      - "[[Scribing- Armored Dolyaks]]"
   - name: Week 13
     upgrades: 
+      - "[[Mine Excavation 3]]"
       - "[[Cloth Synthesizer 3]]"
       - "[[Lumber Synthesizer 3]]"
       - "[[Leather Synthesizer 3]]"
-      - "[[Aetherium Capacity 5]]"
   - name: Week 14
     upgrades: 
-      - "[[Mine Excavation 3]]"
       - "[[Mining Rate 5]]"
-  - name: Week 15
-    upgrades: 
-      - "[[Scribing- Guild Gold and Magic Find Banner]]"
-      - "[[Scribing- Guild Gathering and Swiftness Banner]]"
-      - "[[War Room Restoration 2]]"
-      - "[[Arena Restoration 2]]"
       - "[[Ore Synthesizer 4]]"
       - "[[Plant Synthesizers 2]]"
-      - "[[Lumber Synthesizer 4]]"
-  - name: Week 16
+      - "[[Objective Aura 1- Supply Capacity]]"
+      - "[[Scribing- Healing Mist]]"
+  - name: Week 15
     upgrades: 
+      - "[[Lumber Synthesizer 4]]"
       - "[[Cloth Synthesizer 4]]"
       - "[[Leather Synthesizer 4]]"
-      - "[[Synthesis Output 3]]"
-      - "[[Ore Synthesizer 5]]"
-  - name: Week 17
+      - "[[Guild Armorer 1]]"
+  - name: Week 16
     upgrades: 
       - "[[Aetherium Capacity 6]]"
+      - "[[Synthesis Output 3]]"
       - "[[Ore Synthesizer 5]]"
       - "[[Lumber Synthesizer 5]]"
       - "[[Leather Synthesizer 5]]"
+      - "[[Cloth Synthesizer 5]]"
+      - "[[Objective Aura 2- WvW Experience]]"
+  - name: Week 17
+    upgrades: 
+      - "[[Mining Rate 6]]"
+      - "[[Plant Synthesizers 3]]"
+      - "[[Guild Weaponsmith 1]]"
   - name: Week 18
     upgrades: 
-      - "[[Cloth Synthesizer 5]]"
-      - "[[Plant Synthesizers 3]]"
-      - "[[Mining Rate 6]]"
+      - "[[Guild Waypoint 15% Discount]]"
   - name: Week 19
     upgrades: 
-      - "[[Guild Waypoint 15% Discount]]"
       - "[[Ore Synthesizer 6]]"
-  - name: Week 20
-    upgrades: 
       - "[[Synthesis Output 4]]"
 ---
 Below is a breakdown of the materials and other resources (excluding Favor and Aetherium) that will be required each week according to the [[Upgrade Plan]]. This list does not currently update based on completed upgrades nor reflect the quantities adjusted for already collected materials.
