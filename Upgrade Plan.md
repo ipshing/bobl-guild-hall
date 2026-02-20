@@ -7,8 +7,8 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 | ------------------------------------------------------ |:-----------:|
 | [[Guild Enhancement- Map Bonus\|10% Map Bonus Boost]]  |   5 weeks   |
 | [[Guild Waypoint 10% Discount\|10% Waypoint Discount]] |  11 weeks   |
-| [[Guild Waypoint 15% Discount\|15% Waypoint Discount]] |  19 weeks   |
-| [[Synthesis Output 4\|Maximum Gathering Nodes]]        |  20 weeks   |
+| [[Guild Waypoint 15% Discount\|15% Waypoint Discount]] |  18 weeks   |
+| [[Synthesis Output 4\|Maximum Gathering Nodes]]        |  19 weeks   |
 
 #### *Notes*
 - The use of "weeks" as divisions is arbitrary and could just as easily be labeled "phases". The time period is not a strict requirement, though it should be noted that it is not likely to shrink this plan down to smaller units of time.
