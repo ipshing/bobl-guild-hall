@@ -506,6 +506,11 @@ ul.has-list-bullet > li:has(.mx-image.icon) .list-bullet::after {
     padding-inline-end: unset;
 }
 
+/* Use link color for highlighted links */
+.markdown-rendered mark .internal-link {
+    color: var(--link-color);
+}
+
 /***************************/
 /*          Lists          */
 /***************************/
