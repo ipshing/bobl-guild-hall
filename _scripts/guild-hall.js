@@ -62,50 +62,19 @@ if (miningPages.length > 0) {
 }
 const miningCapacity = dv.container.createDiv("mining-capacity");
 miningCapacity.append(...markdownToHtml(`Mining Capacity: **${capacity.toLocaleString("en-us")}** ![[aetherium.png|css: icon]]`));
-// Determine aetherium rate
-let rate = 60; // default
+// Set aetherium per hour (aph) and time to 1000 units (ttk)
+// based on highest completed Mining Rate upgrade
+let aph = 60;
+let ttk = "16h 40m";
 miningPages = dv
     .pages('#guild-hall/upgrade AND -"_templates"')
     .where((u) => dv.func.link("Guild Mine").equals(u.building))
-    .where((u) => u.rate)
+    .where((u) => u.name.toLowerCase().startsWith("mining rate"))
     .where((u) => u.isComplete)
     .sort((u) => u.order, "desc");
 if (miningPages.length > 0) {
-    rate = miningPages.first().rate;
-}
-// Set aetherium per hour (aph) and time to 1000 units (ttk) based on rate
-let aph = 60;
-let ttk = "16h 40m";
-switch (rate) {
-    case 60:
-    default:
-        aph = 60;
-        ttk = "16h 40m";
-        break;
-    case 50:
-        aph = 72;
-        ttk = "13h 54m";
-        break;
-    case 40:
-        aph = 90;
-        ttk = "11h 07m";
-        break;
-    case 30:
-        aph = 120;
-        ttk = "8h 20m";
-        break;
-    case 25:
-        aph = 144;
-        ttk = "6h 57m";
-        break;
-    case 20:
-        aph = 180;
-        ttk = "5h 34m";
-        break;
-    case 15:
-        aph = 240;
-        ttk = "4h 10m";
-        break;
+    aph = miningPages.first().aetheriumPerHour;
+    ttk = miningPages.first().timeToThousand.toFormat("h'h' m'm'");
 }
 const miningRate = dv.container.createDiv("mining-rate");
 miningRate.append(...markdownToHtml(`Mining Rate: **${aph}** ![[aetherium.png|css: icon]] per hour (time to **1000**: ${ttk})`));

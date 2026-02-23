@@ -14,7 +14,9 @@ cost:
   favor: 500
   aetherium: 5000
   gold: 0
-rate: 30
+secondsPerAetherium: 30
+aetheriumPerHour: 120
+timeToThousand: 8h 20m
 isComplete: false
 order: 7
 materials:
