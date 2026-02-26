@@ -255,6 +255,24 @@ phases:
         notes:
 ---
 
+Below is an upgrade plan for leveling the guild hall specifically to lead to the [[Guild Enhancement- Map Bonus|10% Map Bonus Boost]], [[Guild Waypoint 15% Discount|15% Waypoint Discount]], and [[Synthesis Output 4|Maximum Gathering Nodes]]. This may or may not be the most efficient route, but it is intended to be as direct as possible. This plan differs from the other [[upgrade plan]] in that it assumes the maximum amount of Favor ![[favor.png|css: icon]] will be earned each week.
+
+In a "best case" scenario, the guild hall will reach these goals in the following time frames:
+
+--mx-table gw2-table col-1-width-50
+| Upgrade                                                | Time Needed |
+| ------------------------------------------------------ |:-----------:|
+| [[Guild Enhancement- Map Bonus\|10% Map Bonus Boost]]  |   4 weeks   |
+| [[Guild Waypoint 10% Discount\|10% Waypoint Discount]] |  10 weeks   |
+| [[Guild Waypoint 15% Discount\|15% Waypoint Discount]] |  16 weeks   |
+| [[Synthesis Output 4\|Maximum Gathering Nodes]]        |  17 weeks   |
+
+#### *Notes*
+- The use of "weeks" as divisions is arbitrary and could just as easily be labeled "phases". The time period is not a strict requirement, though it should be noted that it is not likely to shrink this plan down to smaller units of time.
+- Further, the division of these "weeks" or "phases" assumes a *modest* accumulation of Favor ![[favor.png|css: icon]] each week, so some upgrades may be completable earlier if more Favor is earned during the week.
+- Waiting the specified amount of time after a given upgrade is a guideline, not a requirement. However, it is important not to let the Aetherium amount reach its maximum before completing the next upgrade (unless at the end of the week) if the goal is to be as efficient as possible.
+- The gold required as well as the cost/supply of materials is not taken into account due to the unpredictability of the availability of those resources.
+
 ```dataviewjs
 /****************************/
 /*     Helper Functions     */
