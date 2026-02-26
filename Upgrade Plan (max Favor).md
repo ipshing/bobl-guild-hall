@@ -29,208 +29,228 @@ phases:
       - upgrade: "[[Mining Rate 1]]"
         notes: (then wait 6h 57m)
       - upgrade: "[[War Room Restoration 1]]"
-  - name: Week 3
-    tasks:
-      - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
-        isComplete: false
+        notes: (then wait 10h 25m)
       - upgrade: "[[Arena Restoration 1]]"
         notes: (then wait 10h 25m)
       - upgrade: "[[Aetherium Capacity 2]]"
         notes: (then wait 10h 25m)
       - upgrade: "[[Guild Enhancement- Critical Harvesting]]"
-        notes: (then wait 20h 51m)
-      - upgrade: "[[Guild Enhancement- Critical Crafting]]"
-        notes: (then wait 13h 54m)
+  - name: Week 3
+    tasks:
+      - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
+        isComplete: false
       - upgrade: "[[Guild Enhancement- World Reward Tracks]]"
-        notes: (then wait 13h 54m)
+        notes: "*reach Level 10*"
+        isMilestone: true
       - upgrade: "[[Guild Enhancement- PvP Reward Boost]]"
-        notes: (then wait 1d 3h 48m)
+        notes: (then wait 13h 54m)
       - upgrade: "[[Arena Restoration 2]]"
+        notes: (then wait 1d 17h 42m)
+      - upgrade: "[[Guild Portal]]"
+        notes: (then wait 1d 17h 42m)
+        isMilestone: true
+      - upgrade: "[[Mining Rate 2]]"
+        notes: "(can switch with [[Scribing- Guild Gathering Bonus Banner|Scribing: Guild Gathering Bonus Banner]] and [[Scribing- Guild Karma Banner|Scribing: Guild Karma Banner]] if needed)"
   - name: Week 4
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
         isComplete: false
-      - upgrade: "[[Ore Synthesizer 1]]"
       - upgrade: "[[Scribing- Guild Gathering Bonus Banner]]"
       - upgrade: "[[Scribing- Guild Karma Banner]]"
-      - upgrade: "[[Scribing- Guild Experience Banner]]"
-        notes: (then wait 13h 54m)
+      - upgrade: "[[Guild Enhancement- Critical Crafting]]"
+        notes: (then wait 5h 33m)
       - upgrade: "[[Guild Enhancement- Map Bonus]]"
-        notes: (then wait 1d 17h 42m)
-      - upgrade: "[[Guild Portal]]"
-        notes: (then wait 1d 17h 42m)
+        notes: (then wait 1d 9h 21m)
       - upgrade: "[[Guild Enhancement- Magic Find]]"
         isMilestone: true
+        notes: (then wait 11h 7m)
+      - upgrade: "[[Ore Synthesizer 1]]"
+        notes: (then wait 11h 7m)
+      - upgrade: "[[Scribing- Guild Experience Banner]]"
+        notes: (then wait 1d 9h 21m)
+      - upgrade: "[[Mine Excavation 2]]"
+        notes: (then wait 5h 33m)
+      - upgrade: "[[Mission Slot- WvW]]"
+        notes: (then wait 5h 33m) ==*can defer if needed*==
+      - upgrade: "[[Mission Slot- PvP]]"
+        notes: ==*can defer if needed*==
   - name: Week 5
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
         isComplete: false
-      - upgrade: "[[Mining Rate 2]]"
-        notes: (then wait 1d 9h 21m)
-      - upgrade: "[[Mine Excavation 2]]"
-        notes: (then wait 1d 9h 21m)
       - upgrade: "[[Aetherium Capacity 3]]"
         notes: (then wait 1d 9h 21m)
       - upgrade: "[[Guild Waypoint 5% Discount]]"
-  - name: Week 6
-    tasks:
-      - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
-        isComplete: false
-      - upgrade: "[[Scribing- Guild Magic Find Banner]]"
-      - upgrade: "[[Guild Hall Decorations Merchant 1]]"
-      - upgrade: "[[Guild Hall Swiftness +11%]]"
         notes: (then wait 11h 7m)
       - upgrade: "[[Lumber Synthesizer 1]]"
         notes: (then wait 11h 7m)
       - upgrade: "[[Cloth Synthesizer 1]]"
         notes: (then wait 11h 7m)
       - upgrade: "[[Leather Synthesizer 1]]"
-        notes: (then wait 2d 7h 35m)
+        notes: (then wait 22h 14m)
+      - upgrade: "[[Scribing- Guild Magic Find Banner]]"
+        notes: (then wait 11h 7m)
+      - upgrade: "[[Guild Hall Decorations Merchant 1]]"
+  - name: Week 6
+    tasks:
+      - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
+        isComplete: false
       - upgrade: "[[Mining Rate 3]]"
-        notes: (then wait 1d 9h 21m)
+        notes: (then wait 1d 1h)
       - upgrade: "[[Synthesis Output 1]]"
+        notes: (then wait 1d 1h) *reach Level 20*
+        isMilestone: true
+      - upgrade: "[[Ore Synthesizer 2]]"
+        notes: (then wait 1d 17h 40m)
+      - upgrade: "[[Tavern Restoration 2]]"
+        notes: (then wait 8h 20m)
+      - upgrade: "[[Guild Trader 1]]"
   - name: Week 7
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
         isComplete: false
-      - upgrade: "[[Guild Trader 1]]"
-      - upgrade: "[[Mission Slot- WvW]]"
-      - upgrade: "[[Mission Slot- PvP]]"
-      - upgrade: "[[Ore Synthesizer 2]]"
+      - upgrade: "[[Aetherium Capacity 4]]"
         notes: (then wait 1d 17h 40m)
       - upgrade: "[[Leather Synthesizer 2]]"
         notes: (then wait 1d 17h 40m)
       - upgrade: "[[Cloth Synthesizer 2]]"
         notes: (then wait 1d 17h 40m)
       - upgrade: "[[Lumber Synthesizer 2]]"
+        notes: (then wait 1d 17h 40m)
+      - upgrade: "[[Workshop Restoration 2]]"
   - name: Week 8
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
         isComplete: false
-      - upgrade: "[[Aetherium Capacity 4]]"
-        notes: (then wait 1d 17h 40m)
-      - upgrade: "[[Tavern Restoration 2]]"
-        notes: (then wait 1d 17h 40m)
-      - upgrade: "[[Workshop Restoration 2]]"
+      - notes: "*wait about 16h 40m from start of week*"
+        isComplete: false
+      - upgrade: "[[Guild Hall Swiftness +11%]]"
         notes: (then wait 1d 17h 40m)
       - upgrade: "[[Market Restoration 2]]"
-        notes: (try to leave 1d 17h 40m before end of week)
+        notes: (then wait 3d 11h 20m)
+      - upgrade: "[[Mining Rate 4]]"
+        notes: (then wait 1d 1h)
+      - upgrade: "[[Plant Synthesizers 1]]"
+      - upgrade: "[[Guild Vault- Stash]]"
+        notes: "*can defer if needed*"
   - name: Week 9
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
         isComplete: false
-      - notes: "*wait about 1d 17h 40m*"
+      - notes: "*wait about 1d 5h 51m from start of week*"
         isComplete: false
-      - upgrade: "[[Mining Rate 4]]"
-        notes: (then wait 20h 51m)
-      - upgrade: "[[Scribing- Guild Road Marker]]"
-        notes: (then wait 20h 51m)
-      - upgrade: "[[Scribing- Guild Gold from Kills Banner]]"
-        notes: (then wait 20h 51m)
-      - upgrade: "[[Plant Synthesizers 1]]"
+      - upgrade: "[[War Room Restoration 2]]"
+        notes: (then wait 1d 10h 45m)
+      - upgrade: "[[Synthesis Output 2]]"
+        notes: (then wait 3h 28m)
+      - upgrade: "[[WvW Guild Claiming- Camps]]"
+        notes: (then wait 3h 28m)
+      - upgrade: "[[Scribing- Sabotage Depot]]"
+        notes: (then wait 2d 21h 30m)
+      - upgrade: "[[Aetherium Capacity 5]]"
   - name: Week 10
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
         isComplete: false
+      - notes: "*wait about 1d 19h 4m from start of week*"
+        isComplete: false
+      - upgrade: "[[Guild Waypoint 10% Discount]]"
+        isMilestone: true
+        notes: (then wait 1d 10h 45m)
+      - upgrade: "[[Ore Synthesizer 3]]"
+        notes: (then wait 20h 51m)
+      - upgrade: "[[Scribing- Guild Road Marker]]"
+        notes: (then wait 20h 51m)
+      - upgrade: "[[Scribing- Guild Gold from Kills Banner]]"
+        notes: (then wait 20h 51m) *reach Level 30*
       - upgrade: "[[Guild Armorer 1]]"
+        notes: (then wait 20h 51m)
       - upgrade: "[[Guild Weaponsmith 1]]"
-      - upgrade: "[[WvW Guild Claiming- Camps]]"
-      - upgrade: "[[Scribing- Sabotage Depot]]"
-      - upgrade: "[[Scribing- Minor Supply Drop]]"
-      - upgrade: "[[Objective Aura 1- Supply Capacity]]"
-        notes: (then wait 2d 21h 30m)
-      - upgrade: "[[Aetherium Capacity 5]]"
   - name: Week 11
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
         isComplete: false
-      - upgrade: "[[Guild Waypoint 10% Discount]]"
-        isMilestone: true
-        notes: (then wait 5h 21m)
-      - upgrade: "[[Synthesis Output 2]]"
-        notes: (then wait 1d 10h 45m)
-      - upgrade: "[[Ore Synthesizer 3]]"
-        notes: (then wait 1d 10h 45m)
-      - upgrade: "[[War Room Restoration 2]]"
+      - upgrade: "[[Scribing- Minor Supply Drop]]"
+        notes: (then wait 4d 8h 15m)
+      - upgrade: "[[Mine Excavation 3]]"
+        notes: (then wait 6h 57m)
+      - upgrade: "[[Objective Aura 1- Supply Capacity]]"
+        notes: (then wait 6h 57m)
+      - upgrade: "[[Scribing- Healing Mist]]"
+        notes: (then wait 10h 25m)
+      - upgrade: "[[Scribing- Armored Dolyaks]]"
+        notes: (then wait 10h 25m)
+      - upgrade: "[[Objective Aura 2- WvW Experience]]"
   - name: Week 12
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
         isComplete: false
-      - upgrade: "[[Scribing- Guild Banquet]]"
-      - upgrade: "[[Scribing- Healing Mist]]"
-      - upgrade: "[[Scribing- Armored Dolyaks]]"
-      - upgrade: "[[Objective Aura 2- WvW Experience]]"
-      - upgrade: "[[Guild Hall Swiftness +22%]]"
-        notes: (then wait 20h 51m)
-      - upgrade: "[[Scribing- Guild Karma and Experience Banner]]"
-        notes: (try to leave 4d 8h 15m before end of week)
-  - name: Week 13
-    tasks:
-      - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
-        isComplete: false
-      - upgrade: "[[Mine Excavation 3]]"
-        notes: (then wait 1d 10h 45m)
-      - upgrade: "[[Cloth Synthesizer 3]]"
-        notes: (then wait 1d 10h 45m)
-      - upgrade: "[[Lumber Synthesizer 3]]"
-        notes: (then wait 1d 10h 45m)
-      - upgrade: "[[Leather Synthesizer 3]]"
-  - name: Week 14
-    tasks:
-      - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
-        isComplete: false
-      - notes: "*wait about 1d 17h 42*"
+      - notes: "*wait about 3d 4h 27m from start of week*"
         isComplete: false
       - upgrade: "[[Mining Rate 5]]"
         notes: (then wait 1d 3h 50m)
       - upgrade: "[[Ore Synthesizer 4]]"
         notes: (then wait 1d 3h 50m)
       - upgrade: "[[Plant Synthesizers 2]]"
+        notes: (then wait 11h 8m)
+      - upgrade: "[[Scribing- Guild Banquet]]"
+  - name: Week 13
+    tasks:
+      - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
+        isComplete: false
+      - notes: "*wait about 5h 34m from start of week*"
+        isComplete: false
+      - upgrade: "[[Cloth Synthesizer 3]]"
         notes: (then wait 1d 3h 50m)
+      - upgrade: "[[Lumber Synthesizer 3]]"
+        notes: (then wait 1d 3h 50m)
+      - upgrade: "[[Leather Synthesizer 3]]"
+        notes: (then wait 3d 11h 30m)
+      - upgrade: "[[Aetherium Capacity 6]]"
+  - name: Week 14
+    tasks:
+      - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
+        isComplete: false
+      - notes: "*wait about 5h 34m from start of week*"
+        isComplete: false
       - upgrade: "[[Synthesis Output 3]]"
+        notes: (then wait 1d 3h 50m)
+      - upgrade: "[[Ore Synthesizer 5]]"
+        notes: (then wait 4d 15h 20m)
+      - upgrade: "[[Mining Rate 6]]"
   - name: Week 15
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
         isComplete: false
       - upgrade: "[[Lumber Synthesizer 4]]"
-        notes: (then wait 16h 42m)
+        notes: (then wait 20h 50m)
       - upgrade: "[[Cloth Synthesizer 4]]"
-        notes: (then wait 1d 3h 50m)
+        notes: (then wait 20h 50m)
       - upgrade: "[[Leather Synthesizer 4]]"
-        notes: (then wait 1d 3h 50m)
-      - upgrade: "[[Ore Synthesizer 5]]"
-        notes: (try to leave 3d 11h 30m before end of week)
+        notes: (then wait 20h 50m)
+      - upgrade: "[[Lumber Synthesizer 5]]"
+        notes: (then wait 20h 50m)
+      - upgrade: "[[Leather Synthesizer 5]]"
+        notes: (then wait 20h 50m)
+      - upgrade: "[[Cloth Synthesizer 5]]"
+        notes: (then wait 20h 50m)
+      - upgrade: "[[Plant Synthesizers 3]]"
+        notes: (then wait 8h 20m)
+      - upgrade: "[[Brawling Obstacle- Walls]]"
   - name: Week 16
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
         isComplete: false
-      - upgrade: "[[Aetherium Capacity 6]]"
-        notes: (then wait 1d 3h 50m)
-      - upgrade: "[[Lumber Synthesizer 5]]"
-        notes: (then wait 1d 3h 50m)
-      - upgrade: "[[Leather Synthesizer 5]]"
-        notes: (then wait 1d 3h 50m)
-      - upgrade: "[[Cloth Synthesizer 5]]"
-        notes: (then wait 1d 17h 45m)
-      - upgrade: "[[Plant Synthesizers 3]]"
-        notes: (try to leave 1d 14h 58m before end of week)
-  - name: Week 17
-    tasks:
-      - notes: "*wait about 4d 4h 12m*"
+      - notes: "*wait about 3d 11h 20m from start of week*"
         isComplete: false
       - upgrade: "[[Guild Waypoint 15% Discount]]"
         isMilestone: true
-        notes: (try to leave 2d 18h 48m before end of week)
-  - name: Week 18
+  - name: Week 17
     tasks:
-      - notes: "*wait about 3d 22m*"
+      - notes: "*wait about 20h 50m from start of week*"
         isComplete: false
       - upgrade: "[[Ore Synthesizer 6]]"
-        notes: (try to leave 3d 22h 38m before end of week)
-  - name: Week 19
-    tasks:
-      - notes: "*wait about 1d 20h 32m*"
-        isComplete: false
+        notes: (then wait 4d 8h 10m)
       - upgrade: "[[Synthesis Output 4]]"
         notes:
 ---

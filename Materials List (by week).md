@@ -68,7 +68,7 @@ for (const phase of phases) {
     }
     else {
         // Copy Button
-        const copy = header.createEl("button", { cls: "copy-code-button mx-copy-code-button" });
+        const copy = header.createEl("button", { cls: "copy-code-button mx-copy-button" });
         obsidian.setIcon(copy, "lucide-copy");
         copy.onclick = (event) => {
             event.stopPropagation();
