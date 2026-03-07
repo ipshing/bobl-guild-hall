@@ -38,3 +38,89 @@
 .guild-upgrade .materials dd {
     padding-left: var(--size-4-2);
 }
+
+/***************************/
+/*      Item Selector      */
+/***************************/
+.theme-light .item-selector {
+    --list-background-color: var(--color-base-00);
+    --list-border-color: var(--color-base-30);
+    --trek-background-color: var(--color-base-05);
+    --trek-border-color: var(--color-base-35);
+}
+.theme-dark .item-selector {
+    --list-background-color: var(--color-base-25);
+    --list-border-color: var(--color-base-30);
+    --trek-background-color: var(--color-base-30);
+    --trek-border-color: var(--color-base-40);
+}
+.item-selector {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: var(--size-4-4);
+}
+.markdown-rendered .item-selector .header {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.item-selector .column {
+    flex-basis: 50%;
+    flex-grow: 1;
+    min-width: 200px;
+}
+.item-selector .list {
+    background: var(--list-background-color);
+    border: var(--border-width) solid var(--list-border-color);
+    font-family: inherit;
+    padding: var(--size-4-2);
+    border-radius: var(--input-radius);
+    outline: none;
+    overflow: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--size-4-2);
+    width: 100%;
+    height: 400px;
+}
+.item-selector .list .item {
+    display: flex;
+    align-items: center;
+    padding: var(--size-4-1) var(--size-4-2);
+    background: var(--trek-background-color);
+    border: var(--border-width) solid var(--trek-border-color);
+    border-radius: var(--input-radius);
+    outline: none;
+}
+.item-selector .list .item .details {
+    flex-basis: 99%;
+}
+.item-selector .item .details .item-name {
+    font-weight: var(--bold-weight);
+}
+.item-selector .item .details .item-desc {
+    font-size: var(--font-ui-medium);
+    color: var(--text-faint);
+}
+.item-selector .list .item .button {
+    flex-basis: 1%;
+}
+.item-selector .list .item button {
+    padding: var(--size-4-1) var(--size-4-2);
+}
+.item-selector .search input {
+    --input-height: 40px;
+    font-size: var(--font-ui-medium);
+    width: 100%;
+    margin-block-end: var(--size-4-3);
+}
+.item-selector .saved .buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-block-start: var(--size-4-3);
+}
+.item-selector .saved .buttons button {
+    --input-height: 40px;
+    flex-basis: 100%;
+    font-size: var(--font-ui-large);
+}
