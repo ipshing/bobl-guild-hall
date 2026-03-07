@@ -25,7 +25,7 @@ this.container.addClass("guild-upgrade");
 const phases = dv.page("Upgrade Plan").phases;
 for (const phase of phases) {
     let gold = 0;
-    let mats = [];
+    const mats = [];
     // Get only the tasks where an upgrade is listed
     for (const task of dv.array(phase.tasks).where((t) => t.upgrade)) {
             // connect to upgrade file
@@ -35,6 +35,8 @@ for (const phase of phases) {
             // Add gold and mats to existing counts
             gold += upgrade.cost.gold;
             for (const material of upgrade.materials) {
+                // Skip materials that are done
+                if (material.isComplete) continue;
                 // check for existing in 'mats'
                 let mat = mats.find((m) => m.link.equals(material.link));
                 if (!mat) {
@@ -73,7 +75,7 @@ for (const phase of phases) {
         copy.onclick = (event) => {
             event.stopPropagation();
             // Determine longest materials count length
-            max = dv.array(mats).count.max().toString().length;
+            let max = dv.array(mats).count.max().toString().length;
             if (max < 3) max = 3;
             // Build materials text
             let text = "";

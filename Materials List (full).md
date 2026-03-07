@@ -22,7 +22,7 @@ function markdownToHtml(markdown) {
 this.container.addClass("guild-upgrade");
 
 // Pull phases from frontmatter of the "Upgrade Plan" file
-let mats = [];
+const mats = [];
 const phases = dv.page("Upgrade Plan").phases;
 for (const phase of phases) {
     // Get only the tasks where an upgrade is listed
@@ -33,6 +33,8 @@ for (const phase of phases) {
         if (upgrade.isComplete) continue;
         // Tally up materials into the 'mats' array
         for (const material of upgrade.materials) {
+            // Skip materials that are done
+            if (material.isComplete) continue;
             // check for existing in 'mats'
             let mat = mats.find((m) => m.link.equals(material.link));
             if (!mat) {
