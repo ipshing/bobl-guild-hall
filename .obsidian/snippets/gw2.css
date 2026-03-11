@@ -1,4 +1,66 @@
 /***************************/
+/*        GW2 Tools        */
+/***************************/
+.gw2-tool {
+    --input-height: 40px;
+}
+.gw2-tool
+    :is(
+        textarea,
+        .multi-select-container,
+        input.metadata-input-text,
+        input[type="date"],
+        input[type="datetime-local"],
+        input[type="text"],
+        input[type="search"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"]
+    ) {
+    font-size: var(--font-ui-medium);
+}
+.gw2-tool :is(select, .combobox-button, .dropdown) {
+    font-size: var(--font-ui-medium);
+    min-width: 150px;
+}
+.gw2-tool button {
+    font-size: var(--font-ui-medium);
+}
+.gw2-tool button:not(.mx-copy-button):has(> svg) {
+    --icon-size: 24px;
+    padding: var(--size-4-1) var(--size-4-2);
+}
+.gw2-tool .checkbox-container {
+    width: var(--toggle-width);
+    height: calc(var(--toggle-thumb-height) + var(--toggle-border-width) * 2);
+}
+.gw2-tool .checkbox-container::after {
+    width: var(--toggle-thumb-width);
+    height: var(--toggle-thumb-height);
+    margin: var(--toggle-border-width) 0 0 0;
+    transform: translate3d(var(--toggle-border-width), 0, 0);
+}
+.gw2-tool .checkbox-container.is-enabled::after {
+    transform: translate3d(calc(var(--toggle-width) - var(--toggle-thumb-width) - var(--toggle-border-width)), 0, 0);
+}
+
+/* Settings */
+.gw2-tool .settings {
+    margin-block-end: var(--p-spacing);
+}
+.gw2-tool .settings .header {
+    margin-block-start: 0;
+}
+.gw2-tool .settings .setting {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: var(--size-4-2);
+    margin-block-start: var(--p-spacing);
+    margin-block-end: var(--p-spacing);
+}
+
+/***************************/
 /*       Guild Hall        */
 /***************************/
 .guild-upgrade .details {
@@ -56,16 +118,16 @@
 }
 .item-selector {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     gap: var(--size-4-4);
 }
 .markdown-rendered .item-selector .header {
     margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-end: var(--size-4-2);
 }
 .item-selector .column {
-    flex-basis: 50%;
+    flex-basis: 1%;
     flex-grow: 1;
     min-width: 200px;
 }
@@ -105,14 +167,12 @@
 .item-selector .list .item .button {
     flex-basis: 1%;
 }
-.item-selector .list .item button {
-    padding: var(--size-4-1) var(--size-4-2);
-}
 .item-selector .search input {
-    --input-height: 40px;
-    font-size: var(--font-ui-medium);
     width: 100%;
     margin-block-end: var(--size-4-3);
+}
+.item-selector .search input:focus {
+    box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus) inset;
 }
 .item-selector .saved .buttons {
     display: flex;
@@ -120,7 +180,176 @@
     margin-block-start: var(--size-4-3);
 }
 .item-selector .saved .buttons button {
-    --input-height: 40px;
     flex-basis: 100%;
     font-size: var(--font-ui-large);
+}
+
+/***************************/
+/*       Guild Treks       */
+/***************************/
+.guild-trek .settings .setting {
+    gap: var(--size-4-1);
+}
+.guild-trek .settings .label {
+    width: var(--size-4-6);
+    text-align: center;
+}
+.guild-trek .settings input[type="range"] {
+    width: 180px;
+}
+
+.guild-trek .waypoints {
+    margin-block-start: calc(var(--p-spacing) * 2);
+}
+.guild-trek .waypoints .player-header {
+    margin-block-end: 0;
+}
+
+/***************************/
+/*  Aetherium Calculator   */
+/***************************/
+.aetherium h2:not(:first-of-type) {
+    margin-block-start: calc(var(--p-spacing) * 3);
+}
+
+.aetherium > :is(.discord, .timer, .calculator) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--size-4-4);
+}
+.aetherium > :is(.discord, .timer, .calculator) > * {
+    flex-grow: 1;
+}
+
+.aetherium .discord .mining-rate {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: var(--size-4-2);
+}
+.aetherium .discord .override {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: var(--size-4-2);
+    margin-block-start: var(--size-4-2);
+}
+.aetherium .discord .details > * {
+    margin-block-start: var(--size-4-2);
+}
+.aetherium .discord .inputs {
+    margin-block-start: var(--size-4-6);
+}
+.aetherium .discord .inputs :is(.current, .target) {
+    display: flex;
+    align-items: center;
+    margin-block-end: var(--size-4-2);
+}
+.aetherium .discord .inputs :is(.current, .target) > *:first-child {
+    width: 100px;
+}
+.aetherium .discord .inputs .buttons {
+    display: flex;
+    gap: var(--size-4-3);
+    margin-block-start: var(--size-4-4);
+}
+.aetherium .discord .results .format {
+    font-weight: var(--bold-weight);
+}
+.aetherium .discord .results .code > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-4-2);
+}
+.aetherium .discord .results .code-box {
+    height: 36px;
+    width: 180px;
+    background: var(--background-modifier-form-field);
+    border: var(--input-border-width) solid var(--background-modifier-border);
+    color: var(--color-accent);
+    font-family: var(--font-monospace);
+    font-size: var(--font-ui-medium);
+    padding: var(--input-padding);
+    border-radius: var(--input-radius);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aetherium .discord .results .code .mx-copy-button {
+    position: relative;
+    height: 34px;
+    width: 36px;
+}
+
+.aetherium .timer .table :is(th, td) {
+    text-align: center;
+}
+.aetherium .timer .table .row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.aetherium .timer .table .controls {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--size-4-2);
+}
+.aetherium .timer .results {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4-2);
+}
+.aetherium .timer .results .time {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: var(--size-4-2);
+}
+.aetherium .timer .results .label {
+    width: 90px;
+    font-weight: var(--bold-weight);
+    color: var(--color-accent);
+}
+
+.aetherium .calculator {
+    flex-flow: column nowrap;
+}
+.aetherium .calculator > * {
+    margin-block-end: var(--size-4-2);
+}
+.aetherium .calculator .mining-rate {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: var(--size-4-2);
+}
+.aetherium .calculator .mining-rate .dropdown {
+    margin-right: var(--size-4-2);
+}
+.aetherium .calculator .override {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: var(--size-4-2);
+}
+.aetherium .calculator .time {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: var(--size-4-2) var(--size-4-6);
+}
+.aetherium .calculator .time > * {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: var(--size-4-1);
+    flex-basis: 1%;
+}
+.aetherium .calculator .time .dropdown {
+    min-width: 70px;
+    text-align: center;
 }
