@@ -1,14 +1,8 @@
 {
   "pluginList": [
-    "ipshing/obsidian-rpg-toolkit",
     "ipshing/obsidian-markdown-extended"
   ],
-  "pluginSubListFrozenVersion": [
-    {
-      "repo": "ipshing/obsidian-rpg-toolkit",
-      "version": ""
-    }
-  ],
+  "pluginSubListFrozenVersion": [],
   "themesList": [],
   "updateAtStartup": true,
   "updateThemesAtStartup": true,
@@ -18,6 +12,7 @@
   "loggingVerboseEnabled": false,
   "debuggingMode": false,
   "notificationsEnabled": true,
+  "globalTokenName": "",
   "personalAccessToken": "",
   "selectLatestPluginVersionByDefault": false,
   "allowIncompatiblePlugins": false

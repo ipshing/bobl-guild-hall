@@ -1,6 +1,6 @@
 {
-  "version": "0.12.3",
-  "previousVersion": "0.12.0",
+  "version": "0.13.2",
+  "previousVersion": "0.13.1",
   "renderEmbedProperties": true,
   "renderImageProperties": true,
   "renderDLists": true,
@@ -8,5 +8,9 @@
   "renderInlineQuotes": true,
   "renderSubscript": true,
   "renderSuperscript": true,
+  "showCopyButton": true,
+  "copyToken": "",
+  "obscureToken": "",
+  "hiddenToken": "",
   "inlineShowCopyButton": true
 }
