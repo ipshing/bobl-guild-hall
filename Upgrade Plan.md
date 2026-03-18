@@ -143,15 +143,15 @@ phases:
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
         isComplete: false
-      - notes: "*wait about 1d 19m from start of week*"
+      - notes: "*wait about 2d 11h 2m from start of week*"
         isComplete: false
-      - upgrade: "[[War Room Restoration 2]]"
-        notes: (then wait 2d 21h 27)
       - upgrade: "[[Guild Waypoint 10% Discount]]"
         isMilestone: true
         notes: (then wait 1d 10h 44m)
+      - upgrade: "[[War Room Restoration 2]]"
+        notes: (then wait 1d 10h 44m)
       - upgrade: "[[Leather Synthesizer 2]]"
-        notes: (then wait 1d 17h 40m)
+        notes: (then wait 1d 10h 44m)
       - upgrade: "[[Cloth Synthesizer 2]]"
   - name: Week 9
     tasks:
