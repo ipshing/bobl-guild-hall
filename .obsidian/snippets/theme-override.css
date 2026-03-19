@@ -539,7 +539,7 @@ ul.has-list-bullet > li:has(.mx-image.icon) .list-bullet::after {
    moving the first line back the same amount.                    */
 .markdown-rendered ul.contains-task-list > li.task-list-item {
     text-indent: -1px;
-    padding-left: 3px;
+    /* padding-left: 3px; */
 }
 /* Adjust indentation guide */
 .markdown-rendered.show-indentation-guide li.task-list-item > ul::before,

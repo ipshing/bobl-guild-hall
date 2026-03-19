@@ -109,7 +109,12 @@ for (const building of buildings) {
             chkbox.onclick = async () => {
                 const file = dv.app.vault.getFileByPath(upgrade.file.path);
                 await dv.app.fileManager.processFrontMatter(file, (frontmatter) => {
+                    // Update upgrade completion status
                     frontmatter.isComplete = !frontmatter.isComplete;
+                    // Also update materials to match
+                    for (const mat of frontmatter.materials) {
+                        mat.isComplete = frontmatter.isComplete;
+                    }
                 });
             };
             li.append(...markdownToHtml(`[[${upgrade.file.name}|${upgrade.name}]] (${formatCost(upgrade.cost)}level ${upgrade.level}) *${upgrade.xp}xp*`));

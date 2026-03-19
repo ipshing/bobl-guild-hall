@@ -102,6 +102,64 @@
 }
 
 /***************************/
+/*      Upgrade Plan       */
+/***************************/
+.upgrade-plan .phase .header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    gap: var(--size-4-2);
+}
+.upgrade-plan .phase .header .materials-link {
+    font-size: var(--font-ui-medium);
+}
+.upgrade-plan .phase ul {
+    margin-block-start: 0;
+}
+
+/***************************/
+/*     Materials List      */
+/***************************/
+.materials .view-select {
+    margin-block-start: calc(var(--p-spacing) * 1.5);
+    margin-block-end: var(--p-spacing);
+    margin-left: 2px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: var(--size-4-2);
+}
+.materials .materials-list .task-list-item.is-checked.is-partial,
+.theme-dark .materials .materials-list .task-list-item.is-checked.is-partial {
+    opacity: 1;
+}
+.materials .materials-list .task-list-item.is-checked.is-partial > input[type="checkbox"]:checked:after {
+    top: -1px;
+    inset-inline-start: -1px;
+    -webkit-mask-size: 80%;
+    -webkit-mask-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg>');
+}
+.materials .materials-list:has(> .task-list-item > .collapse-icon) > .task-list-item {
+    padding-left: 18px;
+}
+.materials .materials-list > .task-list-item:has(.collapse-icon) {
+    position: relative;
+}
+.materials .materials-list > .task-list-item > .collapse-icon {
+    position: absolute;
+    top: 6px;
+    left: -30px;
+}
+.materials .materials-list > .task-list-item > .collapse-icon svg.svg-icon {
+    width: var(--size-4-4);
+    height: var(--size-4-4);
+    stroke-width: 2px;
+}
+.materials .materials-list .upgrade-list {
+    margin-block-start: var(--size-4-1);
+}
+
+/***************************/
 /*      Item Selector      */
 /***************************/
 .theme-light .item-selector {

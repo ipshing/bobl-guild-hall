@@ -241,6 +241,8 @@ phases:
       - upgrade: "[[Cloth Synthesizer 5]]"
         notes: (then wait 20h 50m)
       - upgrade: "[[Plant Synthesizers 3]]"
+        notes: reach level 40
+        isMilestone: true
   - name: Week 15
     tasks:
       - notes: "[Guild Missions](https://wiki.guildwars2.com/wiki/Guild_mission)"
@@ -269,9 +271,9 @@ In a "best case" scenario, the guild hall will reach these goals in the followin
 | Upgrade                                                | Time Needed |
 | ------------------------------------------------------ |:-----------:|
 | [[Guild Enhancement- Map Bonus\|10% Map Bonus Boost]]  |   4 weeks   |
-| [[Guild Waypoint 10% Discount\|10% Waypoint Discount]] |  10 weeks   |
-| [[Guild Waypoint 15% Discount\|15% Waypoint Discount]] |  16 weeks   |
-| [[Synthesis Output 4\|Maximum Gathering Nodes]]        |  17 weeks   |
+| [[Guild Waypoint 10% Discount\|10% Waypoint Discount]] |   8 weeks   |
+| [[Guild Waypoint 15% Discount\|15% Waypoint Discount]] |  15 weeks   |
+| [[Synthesis Output 4\|Maximum Gathering Nodes]]        |  16 weeks   |
 
 #### *Notes*
 - The use of "weeks" as divisions is arbitrary and could just as easily be labeled "phases". The time period is not a strict requirement, though it should be noted that it is not likely to shrink this plan down to smaller units of time.
@@ -297,13 +299,48 @@ function markdownToHtml(markdown) {
 /****************************/
 /*          Render          */
 /****************************/
+// Set class for container
+this.container.addClass("upgrade-plan");
+
 // Pull phases from frontmatter
 const phases = dv.current().phases;
 for (const phase of phases) {
+    const phaseDiv = this.container.createDiv("phase");
     // Add header
-    this.container.createEl("h3", { text: phase.name });
+    const header = phaseDiv.createDiv("header");
+    header.createEl("h3", { text: phase.name });
+    const link = header.createEl("a", { cls: "materials-link", text: "(view materials)" });
+    link.onclick = async () => {
+        // Locate "Materials List" file and update frontmatter
+        const file = this.app.vault.getFileByPath("Materials List.md");
+        if (file) {
+            // Build upgrades into an array
+            let saved = [];
+            for (const task of phase.tasks) {
+                if (task.upgrade) saved.push(`[[${dv.page(task.upgrade).file.name}]]`);
+            }
+            await this.app.fileManager.processFrontMatter(file, (frontmatter) => {
+                frontmatter.saved = saved;
+            });
+            let fileOpened = false;
+            // Search for "Materials List" in open tabs
+            this.app.workspace.iterateRootLeaves((leaf) => {
+                if (leaf.getViewState().state.file == "Materials List.md") {
+                    // Switch to existing tab
+                    leaf.openFile(file, { active: true });
+                    fileOpened = true;
+                    return;
+                }
+            })
+            if (!fileOpened) {
+                // Open the file in a tab and switch to it
+                const leaf = this.app.workspace.getLeaf(false);
+                leaf.openFile(file);
+            }
+        }
+    };
     // Iterate tasks
-    const taskList = this.container.createEl("ul", "contains-task-list has-list-bullet");
+    const taskList = phaseDiv.createEl("ul", "contains-task-list has-list-bullet");
     for (const task of phase.tasks) {
         if (task.upgrade) {
             // Needs to be linked to the corresponding upgrade
@@ -320,7 +357,12 @@ for (const phase of phases) {
             chkBox.onclick = async () => {
                 const file = dv.app.vault.getFileByPath(upgrade.file.path);
                 await dv.app.fileManager.processFrontMatter(file, (frontmatter) => {
+                    // Update upgrade completion status
                     frontmatter.isComplete = !frontmatter.isComplete;
+                    // Also update materials to match
+                    for (const mat of frontmatter.materials) {
+                        mat.isComplete = frontmatter.isComplete;
+                    }
                 });                
             };
             // Add text
