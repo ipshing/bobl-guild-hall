@@ -25,25 +25,25 @@ materials:
   - link: "[[Glob of Ectoplasm]]"
     count: 50
     isComplete: false
-  - link: "[[Amethyst Lump]]"
+  - link: "[[Amethyst Nugget]]"
     count: 100
     isComplete: false
-  - link: "[[Carnelian Lump]]"
+  - link: "[[Carnelian Nugget]]"
     count: 100
     isComplete: false
-  - link: "[[Lapis Lump]]"
+  - link: "[[Lapis Nugget]]"
     count: 100
     isComplete: false
-  - link: "[[Peridot Lump]]"
+  - link: "[[Peridot Nugget]]"
     count: 100
     isComplete: false
-  - link: "[[Spinel Lump]]"
+  - link: "[[Spinel Nugget]]"
     count: 100
     isComplete: false
-  - link: "[[Sunstone Lump]]"
+  - link: "[[Sunstone Nugget]]"
     count: 100
     isComplete: false
-  - link: "[[Topaz Lump]]"
+  - link: "[[Topaz Nugget]]"
     count: 100
     isComplete: false
 ---
