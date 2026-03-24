@@ -16,6 +16,13 @@ let materialsView = dv.current().viewState?.grouping?.toString().toLowerCase() |
 if (materialsView !== "combined" && materialsView !== "separate") materialsView = "combined";
 let layout = dv.current().viewState?.layout?.toString().toLowerCase() || "collapsed";
 if (layout !== "collapsed" && layout !== "expanded") layout = "collapsed";
+// Get guild level
+const xp = dv
+    .pages('#guild-hall/upgrade AND -"_templates"')
+    .where((u) => u.isComplete)
+    .map((u) => u.xp)
+    .sum();
+const level = Math.floor(xp / 100) || 0;
 
 // Connect to meta-bind api
 const mb = app.plugins.getPlugin("obsidian-meta-bind-plugin")?.api;
@@ -366,17 +373,34 @@ if (materialsView === "combined") {
                     }
                 }
             };
-            // Build text
+            // Display text
+            const display = li.createDiv("item-text");
             const name = material.count > 1 ? matPage.plural : matPage.name;
             if (material.upgrades.length > 1) {
-                li.append(...markdownToHtml(`![[${matPage.image}|css: icon]]`));
+                display.append(...markdownToHtml(`![[${matPage.image}|css: icon]]`));
                 // generate anchor element with tooltip
-                const anchor = li.createEl("a", { text: `${material.count} ${name}` });
+                const anchor = display.createEl("a", { text: `${material.count} ${name}` });
                 obsidian.setTooltip(anchor, "Click to expand");
                 anchor.onclick = async () => await toggleCollapse(taskList, li, collapseIcon);
             }
             else {
-                li.append(...markdownToHtml(`![[${matPage.image}|css: icon]] [[${material.upgrades[0].file.name}|${material.count} ${name}]]`));
+                display.append(...markdownToHtml(`![[${matPage.image}|css: icon]] [[${material.upgrades[0].file.name}|${material.count} ${name}]]`));
+            }
+            // Add warning icon
+            if (material.upgrades.some((u) => u.level > level)) {
+                const warning = display.createDiv("warning");
+                obsidian.setIcon(warning, "lucide-triangle-alert");
+                if (material.upgrades.length > 1) {
+                    obsidian.setTooltip(warning, "One or more upgrades are not yet available");
+                }
+                else {
+                    obsidian.setTooltip(warning, `Available at level ${material.upgrades[0].level}`);
+                }
+            }
+            else if (material.upgrades.some((u) => u.requires.some((link) => !dv.page(link).isComplete))) {
+                const warning = display.createDiv("warning");
+                obsidian.setIcon(warning, "lucide-triangle-alert");
+                obsidian.setTooltip(warning, "One or more requirements have not been met");
             }
             // Create sublist of upgrades
             if (material.upgrades.length > 1) {
@@ -397,8 +421,19 @@ if (materialsView === "combined") {
                         await this.app.fileManager.processFrontMatter(file, (frontmatter) => {
                             frontmatter.materials[index].isComplete = !(material.count === material.complete);
                         });
-                     };
-                    subitem.append(...markdownToHtml(`[[${parent.file.name}|${parent.name}]] (${parent.materials[index].count})`));
+                    };
+                    const subDisplay = subitem.createDiv("item-text");
+                    subDisplay.append(...markdownToHtml(`[[${parent.file.name}|${parent.name}]] (${parent.materials[index].count})`));
+                    if (parent.level > level) {
+                        const warning = subDisplay.createDiv("warning");
+                        obsidian.setIcon(warning, "lucide-triangle-alert");
+                        obsidian.setTooltip(warning, `Available at level ${parent.level}`);
+                    }
+                    else if (parent.requires.some((link) => !dv.page(link).isComplete)) {
+                        const warning = subDisplay.createDiv("warning");
+                        obsidian.setIcon(warning, "lucide-triangle-alert");
+                        obsidian.setTooltip(warning, "One or more requirements have not been met");
+                    }
                 }
             }
         }
@@ -472,6 +507,11 @@ else {
                     });
                 }, 1000);
             };
+            if (upgrade.level > level) {
+                const warning = header.createDiv("warning");
+                obsidian.setIcon(warning, "lucide-triangle-alert");
+                obsidian.setTooltip(warning, `Available at level ${upgrade.level}`);                
+            }
             // Render the list
             const taskList = materials.createEl("ul", "contains-task-list has-list-bullet materials-list");
             for (const material of mats) {
