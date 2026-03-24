@@ -295,12 +295,48 @@ function markdownToHtml(markdown) {
     if (p) return p.childNodes;
     else return temp.childNodes;
 }
+async function viewMaterials(upgrades) {
+    // Locate "Materials List" file and update frontmatter
+    const file = dv.app.vault.getFileByPath("Materials List.md");
+    if (file) {
+        await dv.app.fileManager.processFrontMatter(file, (frontmatter) => {
+            frontmatter.saved = upgrades;
+        });
+        let fileOpened = false;
+        // Search for "Materials List" in open tabs
+        dv.app.workspace.iterateRootLeaves((leaf) => {
+            if (leaf.getViewState().state.file == "Materials List.md") {
+                // Switch to existing tab
+                leaf.openFile(file, { active: true });
+                fileOpened = true;
+                return;
+            }
+        })
+        if (!fileOpened) {
+            // Open the file in a tab and switch to it
+            const leaf = dv.app.workspace.getLeaf(false);
+            leaf.openFile(file);
+        }
+    }
+}
 
 /****************************/
 /*          Render          */
 /****************************/
 // Set class for container
 this.container.addClass("upgrade-plan");
+
+const link = this.container.createEl("a", "materials-link");
+link.append(...markdownToHtml("*View All Upgrade Plan Materials*"));
+link.onclick = async () => {
+    let upgrades = [];
+    for (const phase of dv.current().phases) {
+        for (const task of phase.tasks) {
+            if (task.upgrade) upgrades.push(`[[${dv.page(task.upgrade).file.name}]]`);
+        }
+    }
+    await viewMaterials(upgrades);
+};
 
 // Pull phases from frontmatter
 const phases = dv.current().phases;
@@ -311,33 +347,12 @@ for (const phase of phases) {
     header.createEl("h3", { text: phase.name });
     const link = header.createEl("a", { cls: "materials-link", text: "(view materials)" });
     link.onclick = async () => {
-        // Locate "Materials List" file and update frontmatter
-        const file = this.app.vault.getFileByPath("Materials List.md");
-        if (file) {
-            // Build upgrades into an array
-            let saved = [];
-            for (const task of phase.tasks) {
-                if (task.upgrade) saved.push(`[[${dv.page(task.upgrade).file.name}]]`);
-            }
-            await this.app.fileManager.processFrontMatter(file, (frontmatter) => {
-                frontmatter.saved = saved;
-            });
-            let fileOpened = false;
-            // Search for "Materials List" in open tabs
-            this.app.workspace.iterateRootLeaves((leaf) => {
-                if (leaf.getViewState().state.file == "Materials List.md") {
-                    // Switch to existing tab
-                    leaf.openFile(file, { active: true });
-                    fileOpened = true;
-                    return;
-                }
-            })
-            if (!fileOpened) {
-                // Open the file in a tab and switch to it
-                const leaf = this.app.workspace.getLeaf(false);
-                leaf.openFile(file);
-            }
+        // Build upgrades into an array
+        let upgrades = [];
+        for (const task of phase.tasks) {
+            if (task.upgrade) upgrades.push(`[[${dv.page(task.upgrade).file.name}]]`);
         }
+        await viewMaterials(upgrades);
     };
     // Iterate tasks
     const taskList = phaseDiv.createEl("ul", "contains-task-list has-list-bullet");
