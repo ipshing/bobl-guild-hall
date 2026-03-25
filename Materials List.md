@@ -375,16 +375,17 @@ if (materialsView === "combined") {
             };
             // Display text
             const display = li.createDiv("item-text");
-            const name = material.count > 1 ? matPage.plural : matPage.name;
+            let remaining = material.complete < material.count ? material.count - material.complete : material.count;
+            const name = remaining > 1 ? matPage.plural : matPage.name;
             if (material.upgrades.length > 1) {
                 display.append(...markdownToHtml(`![[${matPage.image}|css: icon]]`));
                 // generate anchor element with tooltip
-                const anchor = display.createEl("a", { text: `${material.count} ${name}` });
+                const anchor = display.createEl("a", { text: `${remaining} ${name}` });
                 obsidian.setTooltip(anchor, "Click to expand");
                 anchor.onclick = async () => await toggleCollapse(taskList, li, collapseIcon);
             }
             else {
-                display.append(...markdownToHtml(`![[${matPage.image}|css: icon]] [[${material.upgrades[0].file.name}|${material.count} ${name}]]`));
+                display.append(...markdownToHtml(`![[${matPage.image}|css: icon]] [[${material.upgrades[0].file.name}|${remaining} ${name}]]`));
             }
             // Add warning icon
             if (material.upgrades.some((u) => u.level > level)) {
