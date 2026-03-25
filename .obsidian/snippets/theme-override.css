@@ -557,7 +557,7 @@ ul.has-list-bullet > li:has(.mx-image.icon) .list-bullet::after {
     opacity: 1;
 }
 .theme-dark .markdown-rendered ul.contains-task-list > .task-list-item.is-checked {
-    opacity: 0.15;
+    /* opacity: 0.15; */
 }
 
 /***************************/
