@@ -259,8 +259,23 @@ phases:
       - upgrade: "[[Ore Synthesizer 6]]"
         notes: (then wait 4d 8h 10m)
       - upgrade: "[[Synthesis Output 4]]"
-        notes:
-        isComplete: true
+        notes: (then wait 12h 30m)
+        isMilestone: true
+      - upgrade: "[[Guild Treasure Trove]]"
+  - name: Week 17
+    tasks:
+      - notes: "*wait about 1h 3m from start of week*"
+      - upgrade: "[[Scribing- Guild Road Marker]]"
+        notes: (then wait 12h 30m)
+      - upgrade: "[[Scribing- Guild Gold from Kills Banner]]"
+        notes: (then wait 20h 50m)
+      - upgrade: "[[Scribing- Guild Karma and Experience Banner]]"
+        notes: (then wait 20h 50m)
+      - upgrade: "[[Scribing- Guild Gold and Magic Find Banner]]"
+        notes: (then wait 20h 50m)
+      - upgrade: "[[Scribing- Guild Gathering and Swiftness Banner]]"
+        notes: (then wait 20h 50m)
+      - upgrade: "[[Scribing- Guild Heroes Banner]]"
 ---
 
 Below is an upgrade plan for leveling the guild hall specifically to lead to the [[Guild Enhancement- Map Bonus|10% Map Bonus Boost]], [[Guild Waypoint 15% Discount|15% Waypoint Discount]], and [[Synthesis Output 4|Maximum Gathering Nodes]]. This may or may not be the most efficient route, but it is intended to be as direct as possible. This plan assumes the maximum amount of Favor ![[favor.png|css: icon]] will be earned each week.
